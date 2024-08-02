@@ -1,0 +1,542 @@
+/* Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+/* Satoshi */
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/assets/fonts/Satoshi-Black.eot');
+  src: url('/assets/fonts/Satoshi-Black.eot?#iefix') format('embedded-opentype'),
+      url('/assets/fonts/Satoshi-Black.woff2') format('woff2'),
+      url('/assets/fonts/Satoshi-Black.woff') format('woff'),
+      url('/assets/fontss/Satoshi-Black.ttf') format('truetype'),
+      url('/assets/fonts/Satoshi-Black.svg#Satoshi-Black') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/assets/fonts/Satoshi-Bold.eot');
+  src: url('/assets/fonts/Satoshi-Bold.eot?#iefix') format('embedded-opentype'),
+      url('/assets/fonts/Satoshi-Bold.woff2') format('woff2'),
+      url('/assets/fonts/Satoshi-Bold.woff') format('woff'),
+      url('/assets/fonts/Satoshi-Bold.ttf') format('truetype'),
+      url('/assets/fonts/Satoshi-Bold.svg#Satoshi-Bold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/assets/fonts/Satoshi-Medium.eot');
+  src: url('/assets/fonts/Satoshi-Medium.eot?#iefix') format('embedded-opentype'),
+      url('/assets/fonts/Satoshi-Medium.woff2') format('woff2'),
+      url('/assets/fonts/Satoshi-Medium.woff') format('woff'),
+      url('/assets/fonts/Satoshi-Medium.ttf') format('truetype'),
+      url('/assets/fonts/Satoshi-Medium.svg#Satoshi-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/assets/fonts/Satoshi-Regular.eot');
+  src: url('/assets/fonts/Satoshi-Regular.eot?#iefix') format('embedded-opentype'),
+      url('/assets/fonts/Satoshi-Regular.woff2') format('woff2'),
+      url('/assets/fonts/Satoshi-Regular.woff') format('woff'),
+      url('/assets/fonts/Satoshi-Regular.ttf') format('truetype'),
+      url('/assets/fonts/Satoshi-Regular.svg#Satoshi-Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/assets/fonts/Satoshi-Light.eot');
+  src: url('/assets/fonts/Satoshi-Light.eot?#iefix') format('embedded-opentype'),
+      url('/assets/fonts/Satoshi-Light.woff2') format('woff2'),
+      url('/assets/fonts/Satoshi-Light.woff') format('woff'),
+      url('/assets/fonts/Satoshi-Light.ttf') format('truetype'),
+      url('/assets/fonts/Satoshi-Light.svg#Satoshi-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* 
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Light.woff2") format("woff2"),
+    url("../fonts/Satoshi-Light.woff") format("woff"),
+    url('../fonts/Satoshi-Light.eot'),
+    url("../fonts/Satoshi-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Regular.woff2") format("woff2"),
+    url("../fonts/Satoshi-Regular.woff") format("woff"),
+    url("../fonts/Satoshi-Regular.eot"),
+    url("../fonts/Satoshi-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Medium.woff2") format("woff2"),
+    url("../fonts/Satoshi-Medium.woff") format("woff"),
+    url("../fonts/Satoshi-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-SemiBold.woff2") format("woff2"),
+    url("../fonts/Satoshi-SemiBold.woff") format("woff"),
+    url("../fonts/Satoshi-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Bold.woff2") format("woff2"),
+    url("../fonts/Satoshi-Bold.woff") format("woff"),
+    url("../fonts/Satoshi-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+} */
+
+/*==== Default Style :: Start ====*/
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+strong,
+i,
+ol,
+ul,
+li,
+form,
+label,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --black: #121715;
+  --white: #fff;
+  --secondary-color: #F6F8F7;
+  --primary-color: #01763F;
+  --base-transition: all 0.3s ease-in-out;
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+/* Track */
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f6f8f7;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #01763f;
+  border-radius: 4px;
+  height: 60px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #015432;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  cursor: pointer;
+  accent-color: var(--primary-color);
+}
+
+body {
+  background-color: var(--white);
+  overflow-x: hidden;
+  line-height: 1.3;
+  font-family: Satoshi;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #F2F4F7;
+}
+
+
+button:focus,
+a:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+
+
+/* ======================== Settings page starts ====================== */
+
+.settings-header-section{
+  width: 100%;
+  padding: 51px 50px 51px 38px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.settings-header-section h1{
+  color: var(--black);
+  font-family: Satoshi;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.51px;
+  text-transform: capitalize;
+}
+.settings-form-section{
+  width: 100%;
+  height: auto;
+  padding: 0px 50px 0px 38px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.settings-form-container{
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.settings-form-container form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+.account-update-header{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+}
+.account-update-header h1{
+  color: var(--black);
+  font-family: Satoshi;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.36px;
+  text-transform: capitalize;
+}
+.account-update-header p{
+  color: var(--black);
+  font-family: Satoshi;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.3px;
+}
+.account-update-btn-section{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 5px;
+}
+.account-update-btn{
+  padding: 23px 60px;
+  text-align: center;
+  color: var(--white);
+  font-family: Satoshi;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  border-radius: 14px;
+  border: 1px solid var(--primary-color);
+  background: var(--primary-color);
+  transition: var(--base-transition);
+}
+.account-update-btn:hover{
+  background-color: var(--secondary-color);
+  border: 1px solid var(--black);
+  color: var(--black);
+}
+
+.account-image-update-section{
+  height: 231px;
+  min-height: 231px;
+}
+.update-profile-img-label{
+  width: 100%;
+  height: calc(100% - 51px);
+  background-color: var(--white);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+}
+.account-image-update-section input{
+  display: none;
+}
+.update-profile-img-label h5{
+  color: #475467;
+  text-align: center;
+  font-family: Satoshi;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 150% */  
+}
+.upload-sign{
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #EAECF0;
+  background: var(--white);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+.image-upload-text{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.image-upload-text span:first-child{
+  font-family: Satoshi;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 20px;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+.image-upload-text span:last-child{
+  font-family: Satoshi;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 20px;
+  color:  #475467;
+  font-weight: 500;
+}
+.updated-image-preview-container{
+  width: 118px;
+  height: 118px;
+  border-radius: 14px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 45px;
+  top: 100px;
+}
+.updated-image-preview-container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.50);
+    z-index: 1;
+    border-radius: 14px;
+}
+.updated-image-preview-container svg{
+  z-index: 12;
+}
+
+.account-personal-info-update-section{
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+}
+
+.account-personal-info-update-section h1{
+  color: var(--black);
+  font-family: Satoshi;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+
+.update-info-form-fields{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.personal-info-field-wrapper{
+  display: flex;
+  width: 100%;
+  gap: 25px;
+}
+.personal-info-field-inner-wrapper{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.personal-info-field-wrapper.email-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+}
+.personal-info-field-wrapper.email-wrapper::before {
+  content: '';
+  position: absolute;
+  left: 28px;
+  top: 50%;
+  transform: translateY(50%);
+  width: 24px; /* Adjust width as needed */
+  height: 23px; /* Adjust height as needed */
+  background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none"%3E%3Cg clip-path="url(%23clip0_516_2250)"%3E%3Cpath d="M20.3563 3.94336H3.60295C2.44638 3.94336 1.50879 4.85256 1.50879 5.97406V17.1429C1.50879 18.2644 2.44638 19.1736 3.60295 19.1736H20.3563C21.5128 19.1736 22.4504 18.2644 22.4504 17.1429V5.97406C22.4504 4.85256 21.5128 3.94336 20.3563 3.94336Z" stroke="%23A2A2A8" stroke-width="1.71341"/%3E%3Cpath d="M1.98438 4.89551L11.2404 13.1903C11.6585 13.5533 12.2988 13.5533 12.7169 13.1903L21.9741 4.89551" stroke="%23A2A2A8" stroke-width="1.71341" stroke-linecap="round" stroke-linejoin="round"/%3E%3Cpath d="M2.45996 18.2223L9.04831 11.5591M21.4978 18.2223L14.9095 11.5591L21.4978 18.2223Z" stroke="%23A2A2A8" stroke-width="2.28454" stroke-linecap="round" stroke-linejoin="round"/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id="clip0_516_2250"%3E%3Crect width="22.8454" height="22.8454" fill="white" transform="translate(0.556641 0.13623)"/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E') no-repeat center;
+  background-size: contain; /* Adjust size as needed */
+}
+
+
+.update-info-form-fields label{
+  width: 100%;
+  padding: 11px ;
+  color: var(--black, #1B212D);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: start;
+}
+.update-info-form-fields input{
+  width: 100%;
+  padding: 18px 28px;
+  color:  #78778B;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 14px;
+  border: 1px solid #F5F5F5;
+  background: var(--white);
+}
+
+.email-wrapper input{
+  padding: 18px 28px 18px 74px;
+}
+
+.personal-info-field-inner-wrapper.dob-picker{
+  position: relative;
+}
+
+.personal-info-field-inner-wrapper.dob-picker::after{
+  content: '';
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  transform: translateY(50%);
+  width: 23px; /* Adjust size as needed */
+  height: 24px; /* Adjust size as needed */
+  background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="23" height="24" viewBox="0 0 23 24" fill="none"%3E%3Cpath d="M7.71259 2.36035V5.21603V2.36035ZM15.3277 2.36035V5.21603V2.36035ZM3.42907 9.10924H19.6112H3.42907ZM20.0872 8.54765V16.6387C20.0872 19.4944 18.6593 21.3982 15.3277 21.3982H7.71259C4.38096 21.3982 2.95312 19.4944 2.95312 16.6387V8.54765C2.95312 5.69197 4.38096 3.78819 7.71259 3.78819H15.3277C18.6593 3.78819 20.0872 5.69197 20.0872 8.54765Z" stroke="%23A2A2A8" stroke-width="1.71341" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/%3E%3Cpath d="M7.99219 16.3532H8.00074M15.0366 13.4976H15.0451H15.0366ZM15.0366 16.3532H15.0451H15.0366ZM11.5153 13.4976H11.5239H11.5153ZM11.5153 16.3532H11.5239H11.5153ZM7.99219 13.4976H8.00074H7.99219Z" stroke="%23A2A2A8" stroke-width="1.71341" stroke-linecap="round" stroke-linejoin="round"/%3E%3C/svg%3E') no-repeat center;
+  background-size: contain; /* Adjust this to fit the size of the SVG */
+}
+
+.personal-info-field-inner-wrapper.password-wrapper{
+  position: relative;
+}
+.personal-info-field-inner-wrapper.password-wrapper input{
+  padding: 18px 28px 18px 74px;
+}
+.personal-info-field-inner-wrapper.password-wrapper .lock{
+  content: '';
+  position: absolute;
+  left: 28px;
+  top: 46%;
+  width: 24px; /* Adjust width as needed */
+  height: 16px;
+  top: 50%;
+  transform: translateY(50%);
+}
+.personal-info-field-inner-wrapper.password-wrapper .show-password{
+  content: '';
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  width: 24px; /* Adjust width as needed */
+  height: 16px;
+  transform: translateY(50%);
+  cursor: pointer;
+}
+/* ======================== Settings page ends ====================== */  

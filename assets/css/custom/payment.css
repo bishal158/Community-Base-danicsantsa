@@ -1,0 +1,272 @@
+:root {
+    --black: #121715;
+    --white: #fff;
+    --secondary-color: #f6f8f7;
+    --primary-color: #01763f;
+    --base-transition: all 0.3s ease-in-out;
+}
+
+
+/* -------------------- shipping-page starts here ----------------- */
+.upload-new-product-and-service-header.seller-profile-view {
+    padding: 51px 50px 51px 38px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    background-color: var(--white);
+    margin-bottom: 10px;
+}
+
+.back-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+    border: 1px solid #EFF1F6;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.upload-new-product-and-service-header h2 {
+    color: var(--black);
+    font-family: Satoshi;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.36px;
+    text-transform: capitalize;
+}
+
+.payment-saction {
+    width: 100%;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.payment-saction form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.payment-saction form hr {
+    margin: 0 0;
+    width: 100%;
+}
+
+.payment-saction form>p {
+    color: var(--black);
+    font-family: Satoshi;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+    /* 157.143% */
+}
+
+.payment-method-radio-btn-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.payment-method-radio-btn-wrapper input {
+    display: none;
+}
+
+.payment-method-radio-btn-wrapper input:checked+label svg rect {
+    stroke: var(--primary-color);
+}
+
+.payment-method-radio-btn-wrapper label {
+    cursor: pointer;
+}
+
+
+.payment-input-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.payment-input-wrapper label {
+    color: var(--black);
+    font-family: Satoshi;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    /* 111.111% */
+    position: relative;
+}
+.payment-input-wrapper label::after{
+    position: absolute;
+    content: '*';
+    color: #F00;
+    font-family: Satoshi;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+   margin-left: 3px;
+}
+
+.payment-input-wrapper input {
+    width: 100%;
+    padding: 12px 16px;
+    text-align: start;
+    border-radius: 14px;
+    border: 1px solid #E4E7E9;
+    background: var(--white);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    color: var(--black);
+    font-family: Satoshi;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+}
+.payment-input-wrapper input::placeholder{
+    color: #ACAEAD;
+    font-family: Satoshi;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+}
+
+.payment-input-wrapper.payment-expiry-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.payment-input-inner-wrapper{
+    width: 33.333%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    justify-content: flex-end;
+}
+.payment-input-inner-wrapper .nice-select{
+    height: 48px;
+    border-radius: 14px;
+    border: 1px solid #E4E7E9;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+}
+
+.payment-input-inner-wrapper .nice-select .current{
+    color: var(--black);
+    font-family: Satoshi;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+}
+.payment-input-inner-wrapper .nice-select::after{
+    border-bottom: 2px solid var(--black);
+    border-right: 2px solid var(--black);
+    height: 8px;
+    width: 8px;
+    margin-top: -7px;
+    right: 15px;
+}
+.payment-input-inner-wrapper .nice-select .list{
+    min-width: 180px;
+    height: 180px;
+    overflow: auto;
+    max-height: 180px;
+}
+.payment-input-wrapper-terms{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+.payment-input-wrapper-terms input[type="checkbox"]{
+    width: 22px;
+    height: 22px;
+    padding: 8px;
+}
+.payment-input-wrapper-terms label{
+    color: var(--black);
+    font-family: Satoshi;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 31px; /* 155% */
+    letter-spacing: -0.3px;
+}
+.payment-input-wrapper-terms span{
+    color: rgba(18, 23, 21, 0.60);
+    font-family: Satoshi;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: -0.3px;
+}
+.payment-input-wrapper-pay-with{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.payment-input-wrapper-pay-with label{
+    cursor: pointer;
+}
+.payment-input-wrapper-pay-with input[type="radio"]{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.payment-input-wrapper-pay-with span{
+    color: var(--black);
+    font-family: Satoshi;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 31px; /* 155% */
+    letter-spacing: -0.3px;
+   
+}
+.submit-btn-wrapper .continue-payment {
+    width: 100%;
+    display: flex;
+    max-width: 267px;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: var(--primary-color);
+    transition: var(--base-transition);
+    border: 1px solid transparent;
+    color: var(--white);
+    font-family: Satoshi;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.27px;
+}
+
+.continue-payment:hover {
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    color: var(--black);
+}
