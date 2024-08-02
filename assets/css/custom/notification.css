@@ -8,7 +8,7 @@
 
 
 /* -------------------- Notification page starts here ----------------- */
-.upload-new-product-and-service-header.seller-profile-view{
+.upload-new-product-and-service-header.seller-profile-view {
   padding: 51px 50px 51px 38px;
   width: 100%;
   display: flex;
@@ -19,7 +19,7 @@
   margin-bottom: 10px;
 }
 
-.back-btn{
+.back-btn {
   width: 60px;
   height: 60px;
   border-radius: 14px;
@@ -30,7 +30,8 @@
   align-items: center;
   cursor: pointer;
 }
-.upload-new-product-and-service-header h2{
+
+.upload-new-product-and-service-header h2 {
   color: var(--black);
   font-family: Satoshi;
   font-size: 24px;
@@ -41,19 +42,20 @@
   text-transform: capitalize;
 }
 
-.notifications-section{
+.notifications-section {
   width: 100%;
   padding: 0 50px 0 38px;
 }
 
-.notifications-container{
+.notifications-container {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
   overflow: hidden;
 }
-.notification{
+
+.notification {
   width: 100%;
   padding: 16px;
   gap: 12px;
@@ -62,7 +64,8 @@
   border-radius: 18px;
   background: #F6F8F7;
 }
-.notification-text{
+
+.notification-text {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -70,16 +73,19 @@
   padding: 6px 2px;
   gap: 12px;
 }
-.notification-text h2{
+
+.notification-text h2 {
   color: var(--black);
   font-family: Satoshi;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 24px; /* 120% */
+  line-height: 24px;
+  /* 120% */
   text-transform: capitalize;
 }
-.notification-text h2.security-alert{
+
+.notification-text h2.security-alert {
   color: var(--black);
   font-family: Satoshi;
   font-size: 18px;
@@ -87,7 +93,8 @@
   font-weight: 400;
   line-height: 24px;
 }
-.notification-text p{
+
+.notification-text p {
   color: #121715;
   font-family: Satoshi;
   font-size: 18px;
@@ -95,7 +102,8 @@
   font-weight: 400;
   line-height: 24px;
 }
-.notification-doc a{
+
+.notification-doc a {
   color: #0085FF;
   font-family: Inter;
   font-size: 14px;
@@ -103,7 +111,8 @@
   font-weight: 400;
   line-height: 24px;
 }
-.review-account-btn{
+
+.review-account-btn {
   display: flex;
   min-height: 40px;
   padding: 8px 16px;
@@ -124,3 +133,160 @@
 }
 
 /* -------------------- Notification page ends here ----------------- */
+
+
+
+/* responsive css starts */
+
+
+@media only screen and (min-width: 1366px) and (max-width: 1919px) {}
+
+
+/* laptop devices */
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {}
+
+/* large tablet devices */
+@media only screen and (min-width:992px) and (max-width: 1199px) {}
+
+/* medium tablet devices */
+@media only screen and (min-width:768px) and (max-width: 991px) {}
+
+
+
+/* small tablet devices */
+
+@media only screen and (min-width:576px) and (max-width: 767px) {
+  .back-btn{
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+  }
+  .upload-new-product-and-service-header h2 {
+    font-size: 22px;
+  }
+  .upload-new-product-and-service-header.seller-profile-view {
+    padding: 10px 15px;
+  }
+
+  .notifications-section {
+    padding: 0 15px;
+  }
+
+  .notifications-container {
+    gap: 12px;
+  }
+
+  .notification {
+    padding: 10px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+  }
+
+  .notification-text {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 6px 2px;
+    gap: 8px;
+  }
+
+  .notification-text h2 {
+    font-size: 20px;
+  }
+
+  .notification-text p {
+    font-size: 16px;
+  }
+
+  .notification-icon {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .notification-close {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .notification-text h2.security-alert {
+    font-size: 16px;
+  }
+}
+
+
+/* large mobile devices */
+
+@media only screen and (min-width:480px) and (max-width: 575px) {
+  
+}
+
+
+
+
+/* mobile device */
+@media only screen and (min-width:375px) and (max-width: 479px) {}
+
+
+
+/* extra small devices */
+@media only screen and (max-width: 575px) {
+  .back-btn{
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+  }
+  .upload-new-product-and-service-header h2 {
+    font-size: 22px;
+  }
+  .upload-new-product-and-service-header.seller-profile-view {
+    padding: 10px 15px;
+  }
+
+  .notifications-section {
+    padding: 0 15px;
+  }
+
+  .notifications-container {
+    gap: 12px;
+  }
+
+  .notification {
+    padding: 10px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+  }
+
+  .notification-text {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 6px 2px;
+    gap: 8px;
+  }
+
+  .notification-text h2 {
+    font-size: 16px;
+  }
+
+  .notification-text p {
+    font-size: 14px;
+  }
+
+  .notification-icon {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .notification-close {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .notification-text h2.security-alert {
+    font-size: 14px;
+  }
+}
