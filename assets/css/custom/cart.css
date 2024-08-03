@@ -405,6 +405,11 @@
 
 /* medium tablet devices */
 @media only screen and (min-width:768px) and (max-width: 991px) {
+  
+  .upload-new-product-and-service-header.seller-profile-view {
+    padding: 28px 50px 28px 38px;
+  }
+
   .cart-container {
     width: 100%;
     display: flex;

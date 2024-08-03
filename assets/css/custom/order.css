@@ -704,14 +704,15 @@ height: 30px;
 .service-calender-container .calenders {
   display: flex;
 }
-.service-calender-container .calenders .calender-item {
+.service-calender-container .calenders .calender-item .time-and-date {
   display: flex;
   gap: 4px;
   padding: 16px;
   border-radius: 8px 0 0 8px;
-border: 1px solid #B6C1CA;
-background: #FFF;
-box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+  border: 1px solid #B6C1CA;
+  background: #FFF;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+
 }
 .service-calender-container .calenders .calender-item:last-child {
   border-radius: 0 8px 8px 0;
