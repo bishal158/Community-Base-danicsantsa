@@ -139,11 +139,6 @@ section {
   height: 60px;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background-color: #015432;
-}
-
 input[type="checkbox"],
 input[type="radio"] {
   cursor: pointer;
