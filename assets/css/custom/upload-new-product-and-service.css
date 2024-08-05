@@ -480,25 +480,14 @@
 
 /* medium tablet devices */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .upload-new-product-and-service-header.seller-profile-view {
-    padding: 28px 50px 28px 38px;
-  }
+.upload-new-product-and-service-header{
+  padding: 28px 50px 28px 38px;
+  
+}
 
-  .shipping-section {
-    flex-wrap: wrap;
-    display: flex;
-    padding: 0 50px 0 38px;
-    flex-direction: column;
-  }
 
-  .delivary-details {
-    width: 100%;
-  }
 
-  .order-details {
-    width: 100%;
-    align-self: self-end !important;
-  }
+
 }
 
 /* small tablet devices */
@@ -510,296 +499,52 @@
     padding: 15px;
   }
 
-  .upload-new-product-and-service-header h2 {
-    font-size: 22px;
-  }
-
-  .upload-new-product-and-service-header.seller-profile-view {
+  .upload-new-product-and-service-header {
     padding: 10px 15px;
   }
 
-  .shipping-section {
-    flex-wrap: wrap;
+  .upload-new-product-and-service-header h2 {
+    font-size: 22px;
+  }
+  .upload-product-and-service-tab-section {
+    width: 100%;
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
-    padding: 0 15px;
+    gap: 15px;
+    height: auto;
+    margin-bottom: 45px;
   }
 
-  .delivary-details {
-    width: 100%;
+  .upload-form-input-wrapper .nice-select .list {
+    max-height: 74px;
+    overflow: auto;
+    width: 294px;
   }
+  .upload-form.active {
 
-  .order-details {
-    width: 100%;
-    align-self: self-end !important;
-  }
-
-  .delivary-details hr {
-    margin: 12px 0;
-  }
-
-  .delivary-details form {
-    row-gap: 12px;
-  }
-
-  .shipping-form-input-wrapper {
-    width: 100%;
-    display: flex;
     gap: 12px;
-    flex-direction: column;
+
   }
 
-  .shipping-form-input-inner-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  .upload-form-input-wrapper {
     gap: 12px;
   }
 
-  .address-input-wrapper {
-    width: 100%;
-    display: flex;
-    gap: 12px;
-    margin-bottom: 12px;
+
+  .upload-form-input-wrapper.price-input-wrapper{
     flex-direction: column;
+  }
+  .upload-form-inner-input-wrapper{
+    gap: 12px;
+    width: 100%;
   }
 
-  .address-input-inner-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
 }
 
 /* large mobile devices */
 
 @media only screen and (min-width: 480px) and (max-width: 575px) {
-  .back-btn {
-    width: 50px;
-    height: 50px;
-    padding: 15px;
-  }
-
-  .upload-new-product-and-service-header h2 {
-    font-size: 22px;
-  }
-
-  .upload-new-product-and-service-header.seller-profile-view {
-    padding: 10px 15px;
-  }
-
-  .shipping-section {
-    padding: 0px 10px;
-    flex-direction: column;
-  }
-
-  .delivary-details form {
-    gap: 12px;
-  }
-
-  .delivary-details {
-    width: 100%;
-  }
-
-  .order-details {
-    min-width: 100%;
-    max-width: 100%;
-    padding: 0 20px 24px 20px;
-    background: var(--secondary-color);
-    border-radius: 18px;
-    border: 1px solid #e4e7e9;
-    justify-content: center;
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    height: 500px;
-  }
-
-  .delivary-details p {
-    font-size: 16px;
-  }
-
-  .shipping-section hr {
-    margin: 12px 0;
-  }
-
-  .delivary-details form label {
-    font-size: 14px;
-    line-height: normal;
-  }
-
-  .shipping-form-input-wrapper {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .shipping-form-input-inner-wrapper {
-    width: 100%;
-    gap: 12px;
-  }
-
-  .address-input-wrapper {
-    flex-direction: column;
-    gap: 12px;
-    margin-bottom: 12px;
-  }
-
-  .address-input-inner-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .delivary-details form input {
-    font-size: 14px;
-    padding: 12px 16px;
-  }
-
-  .full-address textarea {
-    font-size: 14px;
-    max-height: 100px;
-  }
-
-  .address-input-inner-wrapper .nice-select {
-    height: 47px;
-  }
-
-  .submit-btn-wrapper .continue-payment {
-    font-size: 14px;
-    line-height: normal;
-  }
-
-  .product-card-body p {
-    font-size: 16px;
-  }
-
-  .product-card-body h1 {
-    font-size: 18px;
-  }
-
-  .product-card {
-    align-self: center;
-  }
-}
-
-/* mobile device */
-@media only screen and (min-width: 375px) and (max-width: 479px) {
-  .back-btn {
-    width: 50px;
-    height: 50px;
-    padding: 15px;
-  }
-
-  .upload-new-product-and-service-header h2 {
-    font-size: 22px;
-  }
-
-  .upload-new-product-and-service-header.seller-profile-view {
-    padding: 10px 15px;
-  }
-
-  .shipping-section {
-    padding: 0px 10px;
-    flex-direction: column;
-  }
-
-  .delivary-details form {
-    gap: 12px;
-  }
-
-  .delivary-details {
-    width: 100%;
-  }
-
-  .order-details {
-    min-width: 100%;
-    max-width: 100%;
-    padding: 0 20px 24px 20px;
-    background: var(--secondary-color);
-    border-radius: 18px;
-    border: 1px solid #e4e7e9;
-    justify-content: center;
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    height: 500px;
-  }
-
-  .delivary-details p {
-    font-size: 16px;
-  }
-
-  .shipping-section hr {
-    margin: 12px 0;
-  }
-
-  .delivary-details form label {
-    font-size: 14px;
-    line-height: normal;
-  }
-
-  .shipping-form-input-wrapper {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .shipping-form-input-inner-wrapper {
-    width: 100%;
-    gap: 12px;
-  }
-
-  .address-input-wrapper {
-    flex-direction: column;
-    gap: 12px;
-    margin-bottom: 12px;
-  }
-
-  .address-input-inner-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .delivary-details form input {
-    font-size: 14px;
-    padding: 12px 16px;
-  }
-
-  .full-address textarea {
-    font-size: 14px;
-    max-height: 100px;
-  }
-
-  .address-input-inner-wrapper .nice-select {
-    height: 47px;
-  }
-
-  .submit-btn-wrapper .continue-payment {
-    font-size: 14px;
-    line-height: normal;
-  }
-
-  .product-card-body p {
-    font-size: 16px;
-  }
-
-  .product-card-body h1 {
-    font-size: 18px;
-  }
-
-  .product-card {
-    align-self: center;
-  }
-}
-
-/* extra small devices */
-@media only screen and (max-width: 374px) {
-
   .back-btn {
     width: 50px;
     height: 50px;
@@ -873,6 +618,7 @@
 
   .upload-form-input-wrapper.price-input-wrapper {
     flex-direction: column;
+    gap: 12px;
   }
 
   .upload-form-inner-input-wrapper {
@@ -918,5 +664,149 @@
 }
   .upload-form-button-wrapper button{
     font-size: 14px;
+  }
+  .image-preview{
+    gap: 3px;
+  }
+  .image-preview img{
+    width: 80px;
+    height: 80px;
+  }
+
+}
+
+/* mobile device */
+@media only screen and (min-width: 375px) and (max-width: 479px) {
+
+}
+
+/* extra small devices */
+@media only screen and (max-width: 479px) {
+
+  .back-btn {
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+  }
+
+  .upload-new-product-and-service-header {
+    padding: 10px 15px;
+  }
+
+  .upload-new-product-and-service-header h2 {
+    font-size: 22px;
+  }
+
+  .upload-product-and-service-tab-section {
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: auto;
+    margin-bottom: 45px;
+  }
+
+  .upload-form-input-wrapper .nice-select .list {
+    max-height: 74px;
+    overflow: auto;
+    width: 294px;
+  }
+
+  .upload-product-and-service-tab-header {
+
+    width: 100%;
+
+    padding: 5px;
+
+  }
+
+  .tab-btn {
+    
+    padding: 11px 12px;
+    
+    font-size: 14px;
+
+  }
+
+  .upload-form-input-wrapper label {
+    font-size: 14px;
+    line-height: normal;
+  }
+
+  .upload-form {
+
+    gap: 12px;
+
+  }
+
+  .upload-form-input-wrapper {
+    gap: 12px;
+  }
+
+  .upload-form-input-wrapper input {
+    width: 100%;
+    padding: 12px;
+
+    font-size: 14px;
+
+    line-height: normal;
+  }
+
+  .upload-form-input-wrapper.price-input-wrapper {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .upload-form-inner-input-wrapper {
+    width: 100%;
+    gap: 12px;
+  }
+
+  .color-wrapper {
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: 12px;
+  }
+
+  .upload-form-input-wrapper.color-input-wrapper .color-wrapper label {
+    font-size: 14px;
+  }
+
+  .upload-form-image-input-wrapper p {
+    font-size: 14px;
+  }
+
+  .upload-form-image-input-wrapper {
+    gap: 12px;
+  }
+
+  .upload-form-image-input-wrapper label {
+    font-size: 14px;
+  }
+
+  .upload-form-image-input-wrapper label.image-upload-container {
+
+    height: 160px;
+    padding: 26px 40px;
+
+  }
+
+  .upload-form-input-wrapper .nice-select {
+    height: 48px;
+    font-size: 14px;
+  }
+.upload-form-input-wrapper .nice-select .current{
+  font-size: 14px;
+}
+  .upload-form-button-wrapper button{
+    font-size: 14px;
+  }
+  .image-preview{
+    gap: 3px;
+  }
+  .image-preview img{
+    width: 80px;
+    height: 80px;
   }
 }

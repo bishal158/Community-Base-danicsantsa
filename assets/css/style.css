@@ -183,6 +183,15 @@ button {
   display: none !important;
 }
 
+.flatpickr-day.selected {
+  background-color: var(--primary-color) !important;
+  color: var(--white);
+ 
+}
+.flatpickr-calendar{
+  font-family: Satoshi !important;
+}
+
 /* =================================================:: Bishal Code starts here  ::====================================================== */
 
 /* -------------------------    Buyer Home Page Starts  ---------------------------   */
