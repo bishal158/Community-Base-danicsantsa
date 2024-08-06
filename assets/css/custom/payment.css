@@ -287,7 +287,14 @@
   border: 1px solid var(--black);
   color: var(--black);
 }
-
+.continue-payment.submit-btn{
+  max-width: 200px !important;
+}
+.submit-btn-wrapper.submit-payment-wrapper{
+width: 100%;
+display: flex;
+justify-content: flex-end;
+}
 .paye-with-inner {
   width: 100%;
   display: flex;

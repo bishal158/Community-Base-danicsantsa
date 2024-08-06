@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1 maximum-scale=1"
     />
-    <title>Community Base - Seller Home</title>
+    <title>Community Base - Payment</title>
     <!-- ==== Favicon ==== -->
     <link rel="icon" href="assets/images/main-icon.png" type="image/png" />
     <!-- ==== All Css Links ==== -->
@@ -31,6 +31,8 @@
       type="text/css"
       href="./assets/css/plugins/nice-select.min.css"
     />
+ 
+ 
     <link
       rel="stylesheet"
       type="text/css"
@@ -41,7 +43,7 @@
     <link rel="stylesheet" href="./assets/css/plugins/flatpickr.min.css" />
     <!-- custom css -->
     <link rel="stylesheet" type="text/css" href="assets/css/helper.css" />
-    <link rel="stylesheet" href="assets/css/custom/seller-home.css" />
+    <link rel="stylesheet" href="assets/css/custom/payment.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
   </head>
@@ -245,727 +247,298 @@
         <!-- display content -->
         <div class="main-content-display">
           <!-- header section starts -->
-          <div class="main-content-display-header-container seller-home">
-            <!-- user controller section -->
-            <div class="user-controller-section">
-              <div class="welcome-msg-section">
-                <h1>Seller Profile</h1>
-              </div>
-              <div class="controller-section">
-                <a href="statics.html" class="statics-btn">
-                  <img src="./assets/images/statistic 2.png" alt="" srcset="" />
-                  <span>Statics</span>
-                </a>
-
-                <a href="buyer-home.html" class="switch-mode-section checked">
-                  <span class="switch-text">Switch to buyer</span>
-                  <label class="switch">
-                    <input
-                      type="checkbox"
-                      name="switch-mode"
-                      id="switch-mode"
-                      checked
-                    />
-                    <span class="slider round"></span>
-                  </label>
-                </a>
-
-                <a href="notification.html" class="notification-button">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M11.9954 7.09003V10.1576M12.0138 3C8.62386 3 5.87875 5.74511 5.87875 9.13504V11.0695C5.87875 11.6959 5.62082 12.6355 5.2984 13.1698L4.12851 15.1227C3.40999 16.3294 3.90742 17.6744 5.23392 18.1165C10.6435 19.0834 13.3629 19.1068 18.8029 18.1165C19.0935 18.0196 19.3586 17.8586 19.5787 17.6454C19.7987 17.4322 19.968 17.1723 20.0742 16.8849C20.1803 16.5975 20.2205 16.29 20.1918 15.9849C20.163 15.6799 20.0662 15.3852 19.9083 15.1227L18.7384 13.1698C18.416 12.6355 18.158 11.6867 18.158 11.0695V9.13504C18.1488 5.76353 15.3853 3 12.0138 3Z"
-                      stroke="#1F2B47"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      d="M15.0629 18.1594C15.0629 19.7205 13.6811 21 11.9954 21C11.1571 21 10.3833 20.6759 9.83061 20.1641C9.2779 19.6522 8.92786 18.9357 8.92786 18.1594"
-                      stroke="#1F2B47"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                    />
-                    <circle
-                      cx="17.5597"
-                      cy="5.49683"
-                      r="3.49683"
-                      fill="url(#paint0_linear_528_1704)"
-                      stroke="white"
-                    />
-                    <defs>
-                      <linearGradient
-                        id="paint0_linear_528_1704"
-                        x1="19.6503"
-                        y1="2.32399"
-                        x2="14.6493"
-                        y2="8.39579"
-                        gradientUnits="userSpaceOnUse"
-                      >
-                        <stop stop-color="#FF3D3E" />
-                        <stop offset="1" stop-color="#FF5C5D" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </a>
-              </div>
-            </div>
+          <div
+            class="upload-new-product-and-service-header seller-profile-view" data-aos="fade-down"
+          >
+            <a class="back-btn" href="service-date-picker.html">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M19 12H5M5 12L11 18M5 12L11 6"
+                  stroke="#121715"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <h2>Payment</h2>
           </div>
           <!-- header section ends -->
-          <!-- counter section starts -->
-          <div class="main-content-display-counter-container">
-            <div class="main-content-display-counter-header"></div>
-            <div class="main-content-display-counter-body">
-              <div class="main-content-display-counter-logo">
-                <img
-                  src="assets/images/seller-home-counter-logo.png"
-                  alt=""
-                  srcset=""
+
+          <!-- payment  section starts -->
+          <div class="payment-saction" data-aos="fade-up">
+            <form action="">
+              <p>Choose a payment method</p>
+              <!-- field 1 -->
+              <div class="payment-method-radio-btn-wrapper">
+                <!-- stripe -->
+                <input type="radio" name="payment-method" id="stripe" checked />
+                <label for="stripe">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="63"
+                    height="43"
+                    viewBox="0 0 63 43"
+                    fill="none"
+                  >
+                    <rect
+                      x="0.44743"
+                      y="0.44743"
+                      width="61.7453"
+                      height="42.0584"
+                      rx="4.92173"
+                      fill="white"
+                      stroke="#E4E7E9"
+                      stroke-width="0.894859"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M33.6549 14.5721L30.4729 15.255V12.6751L33.6549 12.0049V14.5721ZM20.7231 13.4714L17.6298 14.129L17.6172 24.2586C17.6172 26.1303 19.0243 27.5087 20.9006 27.5087C21.9401 27.5087 22.7007 27.319 23.1191 27.0914V24.5242C22.7134 24.6886 20.7104 25.2703 20.7104 23.3987V18.9093H23.1191V16.2156H20.7104L20.7231 13.4714ZM54.5861 21.7928C54.5861 18.5554 53.0141 16.0008 50.0097 16.0008C46.9925 16.0008 45.167 18.5554 45.167 21.7675C45.167 25.574 47.3221 27.4962 50.4153 27.4962C51.9239 27.4962 53.0649 27.1548 53.9269 26.6742V24.145C53.0649 24.575 52.076 24.8405 50.821 24.8405C49.5913 24.8405 48.5011 24.4106 48.3616 22.9183H54.5608C54.5608 22.849 54.5653 22.6922 54.5705 22.5112V22.5112L54.5705 22.5085L54.5706 22.5078L54.5706 22.5075L54.5706 22.5072V22.507C54.5777 22.2593 54.5861 21.9674 54.5861 21.7928ZM48.3227 20.5914C48.3227 19.1624 49.1975 18.568 49.9961 18.568C50.7694 18.568 51.5935 19.1624 51.5935 20.5914H48.3227ZM13.2322 18.7455C12.5603 18.7455 12.1546 18.9352 12.1546 19.4284C12.1546 19.9669 12.8528 20.2038 13.7189 20.4977C15.131 20.9768 16.9895 21.6073 16.9973 23.9431C16.9973 26.2068 15.1845 27.5094 12.5476 27.5094C11.4574 27.5094 10.2657 27.2944 9.08672 26.7885V23.7787C10.1516 24.3604 11.4954 24.7904 12.5476 24.7904C13.2575 24.7904 13.7646 24.6007 13.7646 24.019C13.7646 23.4225 13.0078 23.1499 12.0941 22.8207C10.7026 22.3194 8.94727 21.6871 8.94727 19.5802C8.94727 17.3418 10.6587 16.0013 13.2322 16.0013C14.2844 16.0013 15.3239 16.1657 16.3761 16.583V19.5549C15.4127 19.0364 14.1956 18.7455 13.2322 18.7455ZM27.0627 17.1518L26.8598 16.216H24.1216V27.2815H27.2909V19.7823C28.0388 18.8085 29.3066 18.9855 29.6995 19.1246V16.216C29.2939 16.0643 27.8106 15.786 27.0627 17.1518ZM30.4729 16.216H33.6549V27.2815H30.4729V16.216ZM37.7861 16.9872C38.2298 16.5826 39.0285 16.0008 40.2709 16.0008C42.4894 16.0008 44.5811 17.9989 44.5938 21.6663C44.5938 25.6752 42.5274 27.4963 40.2582 27.4963C39.1426 27.4963 38.4707 27.0283 38.0143 26.6995L38.0016 30.2784L34.8323 30.9487V16.2032H37.6213L37.7861 16.9872ZM38.0147 24.1195C38.3189 24.4483 38.7626 24.7139 39.5106 24.7139C40.6769 24.7139 41.4629 23.4493 41.4629 21.7547C41.4629 20.098 40.6642 18.8081 39.5106 18.8081C38.788 18.8081 38.3316 19.061 38.002 19.4278L38.0147 24.1195Z"
+                      fill="#6461FC"
+                    />
+                  </svg>
+                </label>
+
+                <!-- visa -->
+                <input type="radio" name="payment-method" id="visa" />
+                <label for="visa">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="64"
+                    height="43"
+                    viewBox="0 0 64 43"
+                    fill="none"
+                  >
+                    <rect
+                      x="1.23454"
+                      y="0.44743"
+                      width="61.7453"
+                      height="42.0584"
+                      rx="4.92173"
+                      fill="white"
+                      stroke="#E4E7E9"
+                      stroke-width="0.894859"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M19.8043 29.0977H16.0095L13.1639 18.2414C13.0288 17.7421 12.742 17.3006 12.3202 17.0925C11.2674 16.5696 10.1073 16.1534 8.8418 15.9435V15.5256H14.9549C15.7986 15.5256 16.4314 16.1534 16.5368 16.8826L18.0133 24.7136L21.8062 15.5256H25.4955L19.8043 29.0977ZM27.6039 29.0977H24.0201L26.9712 15.5256H30.555L27.6039 29.0977ZM35.1934 19.2858C35.2988 18.5548 35.9316 18.1368 36.6698 18.1368C37.8299 18.0319 39.0936 18.2418 40.1482 18.7629L40.781 15.8407C39.7264 15.4228 38.5663 15.2129 37.5135 15.2129C34.0351 15.2129 31.504 17.0928 31.504 19.7019C31.504 21.6868 33.2969 22.729 34.5624 23.3569C35.9316 23.9829 36.4589 24.4009 36.3534 25.0269C36.3534 25.966 35.2988 26.3839 34.246 26.3839C32.9805 26.3839 31.715 26.0709 30.5567 25.548L29.924 28.4719C31.1895 28.993 32.5587 29.2029 33.8242 29.2029C37.7244 29.3061 40.1482 27.4279 40.1482 24.6089C40.1482 21.059 35.1934 20.8509 35.1934 19.2858ZM52.6895 29.0977L49.8439 15.5256H46.7873C46.1546 15.5256 45.5218 15.9435 45.3109 16.5696L40.0415 29.0977H43.7308L44.4672 27.1146H49.0002L49.422 29.0977H52.6895ZM47.3147 19.181L48.3675 24.296H45.4164L47.3147 19.181Z"
+                      fill="#172B85"
+                    />
+                  </svg>
+                </label>
+
+                <!-- dinners-club -->
+                <input type="radio" name="payment-method" id="dinners-club" />
+                <label for="dinners-club">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="64"
+                    height="43"
+                    viewBox="0 0 64 43"
+                    fill="none"
+                  >
+                    <rect
+                      x="1.0197"
+                      y="0.44743"
+                      width="61.7453"
+                      height="42.0584"
+                      rx="4.92173"
+                      fill="white"
+                      stroke="#E4E7E9"
+                      stroke-width="0.894859"
+                    />
+                    <path
+                      d="M34.6578 34.8994C41.6332 34.9331 48.0001 29.1584 48.0001 22.1334C48.0001 14.4519 41.6332 9.14167 34.6578 9.14453H28.6544C21.5958 9.14167 15.7852 14.4534 15.7852 22.1334C15.7852 29.1598 21.5958 34.9331 28.6544 34.8994H34.6578Z"
+                      fill="#0079BE"
+                    />
+                    <path
+                      d="M28.6832 10.209C22.2324 10.2111 17.0061 15.487 17.0039 21.9986C17.0061 28.5096 22.2324 33.7854 28.6832 33.7876C35.1346 33.7854 40.3632 28.5096 40.3639 21.9986C40.3632 15.487 35.1353 10.2111 28.6832 10.209ZM21.2805 21.9986C21.2791 20.4931 21.732 19.0222 22.5799 17.7781C23.4278 16.534 24.6313 15.5746 26.0331 15.0253V28.9712C24.6312 28.4223 23.4275 27.4632 22.5796 26.2192C21.7317 24.9751 21.2789 23.5042 21.2805 21.9986ZM31.3326 28.9741V15.0246C32.7354 15.5731 33.9399 16.5324 34.7884 17.7769C35.637 19.0214 36.0899 20.4931 36.088 21.9994C36.0896 23.5055 35.6365 24.9771 34.7881 26.2216C33.9396 27.466 32.7352 28.4254 31.3326 28.9741Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M34.6578 34.8994C41.6332 34.9331 48.0001 29.1584 48.0001 22.1334C48.0001 14.4519 41.6332 9.14167 34.6578 9.14453H28.6544C21.5958 9.14167 15.7852 14.4534 15.7852 22.1334C15.7852 29.1598 21.5958 34.9331 28.6544 34.8994H34.6578Z"
+                      fill="#0079BE"
+                    />
+                    <path
+                      d="M28.6832 10.209C22.2324 10.2111 17.0061 15.487 17.0039 21.9986C17.0061 28.5096 22.2324 33.7854 28.6832 33.7876C35.1346 33.7854 40.3632 28.5096 40.3639 21.9986C40.3632 15.487 35.1353 10.2111 28.6832 10.209ZM21.2805 21.9986C21.2791 20.4931 21.732 19.0222 22.5799 17.7781C23.4278 16.534 24.6313 15.5746 26.0331 15.0253V28.9712C24.6312 28.4223 23.4275 27.4632 22.5796 26.2192C21.7317 24.9751 21.2789 23.5042 21.2805 21.9986ZM31.3326 28.9741V15.0246C32.7354 15.5731 33.9399 16.5324 34.7884 17.7769C35.637 19.0214 36.0899 20.4931 36.088 21.9994C36.0896 23.5055 35.6365 24.9771 34.7881 26.2216C33.9396 27.466 32.7352 28.4254 31.3326 28.9741Z"
+                      fill="white"
+                    />
+                  </svg>
+                </label>
+
+                <!-- master -->
+                <input type="radio" name="payment-method" id="master" />
+                <label for="master">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="63"
+                    height="43"
+                    viewBox="0 0 63 43"
+                    fill="none"
+                  >
+                    <rect
+                      x="0.806805"
+                      y="0.44743"
+                      width="61.7453"
+                      height="42.0584"
+                      rx="4.92173"
+                      fill="white"
+                      stroke="#E4E7E9"
+                      stroke-width="0.894859"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M32.128 30.7062C29.9955 32.5462 27.2294 33.6571 24.2068 33.6571C17.4619 33.6571 11.9941 28.1258 11.9941 21.3026C11.9941 14.4795 17.4619 8.94824 24.2068 8.94824C27.2294 8.94824 29.9955 10.059 32.128 11.8991C34.2605 10.059 37.0266 8.94824 40.0492 8.94824C46.7941 8.94824 52.2618 14.4795 52.2618 21.3026C52.2618 28.1258 46.7941 33.6571 40.0492 33.6571C37.0266 33.6571 34.2605 32.5462 32.128 30.7062Z"
+                      fill="#ED0006"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M32.127 30.7067C34.7531 28.4406 36.4184 25.0686 36.4184 21.3031C36.4184 17.5377 34.7531 14.1656 32.127 11.8996C34.2595 10.0595 37.0256 8.94873 40.0482 8.94873C46.793 8.94873 52.2608 14.48 52.2608 21.3031C52.2608 28.1263 46.793 33.6575 40.0482 33.6575C37.0256 33.6575 34.2595 32.5467 32.127 30.7067Z"
+                      fill="#F9A000"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M32.1274 30.7065C34.7535 28.4404 36.4188 25.0684 36.4188 21.3029C36.4188 17.5375 34.7535 14.1654 32.1274 11.8994C29.5012 14.1654 27.8359 17.5375 27.8359 21.3029C27.8359 25.0684 29.5012 28.4404 32.1274 30.7065Z"
+                      fill="#FF5E00"
+                    />
+                  </svg>
+                </label>
+              </div>
+              <hr/>
+              <!-- field 2 -->
+              <div class="payment-input-wrapper">
+                <label for="">Name on card</label>
+                <input type="text" id="card-name" name="card-name" placeholder="Full Name" required />
+              </div>
+
+              <!-- field 3 -->
+              <div class="payment-input-wrapper">
+                <label for="card-number">Card Number</label>
+                <input
+                  type="text"
+                  id="card-number"
+                  name="card-number"
+                  required
+                  placeholder="Card Number"
                 />
               </div>
-              <div class="main-content-display-counter-section">
-                <div class="seller-name-section">
-                  <h5>Dope.Store</h5>
-                  <p>Royal Ln. Mesa,</p>
+
+              <!-- field 4 -->
+              <div class="payment-input-wrapper payment-expiry-wrapper">
+                <div class="payment-input-inner-wrapper">
+                  <label for="expiry-date">Expiration Date</label>
+                  <select name="expiry-date" id="expiry-date">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
                 </div>
-                <div class="seller-counter-section">
-                  <div class="counter-box">
-                    <h2 data-target="5905">0</h2>
-                    <p>Followers</p>
-                  </div>
-                  <div class="counter-box">
-                    <h2 data-target="110">0</h2>
-                    <p>Products</p>
-                  </div>
-                  <div class="counter-box">
-                    <h2 data-target="4.8">0.0</h2>
-                    <p>Rating</p>
-                  </div>
+                <div class="payment-input-inner-wrapper">
+                 
+                  <select name="expiry-year" id="expiry-year">
+                    <option value="2024" selected>2024</option>
+                  </select>
+                </div>
+                <div class="payment-input-inner-wrapper security-code">
+                  <label for="expiry-year">Security code</label>
+                  <input type="password" required />
                 </div>
               </div>
-            </div>
+
+              <!-- field 5 -->
+              <div class="payment-input-wrapper-terms">
+                <input type="checkbox" name="terms" id="terms" />
+                <label for="terms">
+                  My billing address is the same as my shipping address <br />
+                  <span>
+                    2118 Thornridge Cir. Syracuse, Connecticut 35624, (704)
+                    555-0127</span
+                  >
+                </label>
+              </div>
+
+              <!-- field 6 -->
+              <div class="submit-btn-wrapper">
+                <a href="#"  class="continue-payment">
+                  Review your order
+                </a>
+              </div>
+
+              <!-- field 7 -->
+              <div class="payment-input-wrapper-pay-with">
+                <div class="paye-with-inner">
+                  <input type="radio" name="pay-with" id="paypal" checked />
+                  <label for="paypal">
+                    <span>Pay with Paypal</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="24"
+                      viewBox="0 0 20 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M5.62062 23.1619L6.02526 20.592L5.124 20.5711H0.820312L3.81118 1.60675C3.82031 1.54949 3.85059 1.49611 3.89469 1.45821C3.93878 1.4203 3.99535 1.39941 4.05414 1.39941H11.3108C13.72 1.39941 15.3825 1.90073 16.2505 2.89021C16.6574 3.35441 16.9166 3.83947 17.042 4.37329C17.1734 4.93342 17.1759 5.60261 17.0474 6.41881L17.038 6.47838V7.00135L17.4451 7.23191C17.7878 7.4137 18.06 7.62182 18.2689 7.8601C18.6172 8.25698 18.8423 8.76139 18.9374 9.35941C19.0356 9.97447 19.0031 10.7063 18.8423 11.5349C18.6566 12.488 18.3564 13.3182 17.9511 13.9974C17.5781 14.6233 17.103 15.1423 16.5392 15.5447C16.0007 15.9269 15.3609 16.217 14.6375 16.4028C13.9365 16.5852 13.1374 16.6774 12.2609 16.6774H11.6961C11.2923 16.6774 10.8999 16.8228 10.5922 17.0836C10.2835 17.3497 10.0791 17.7131 10.0165 18.1109L9.97396 18.3423L9.2591 22.8718L9.22658 23.0381C9.21812 23.0909 9.20342 23.1172 9.18182 23.135C9.16244 23.151 9.1346 23.1619 9.10743 23.1619H5.62062Z"
+                        fill="#253B80"
+                      />
+                      <path
+                        d="M17.8305 6.53857C17.8089 6.67705 17.7842 6.81862 17.7563 6.96407C16.7992 11.8775 13.5252 13.5749 9.34359 13.5749H7.21458C6.70326 13.5749 6.27233 13.9462 6.19261 14.4506L5.10249 21.364L4.79382 23.3235C4.74194 23.6546 4.99737 23.9533 5.33142 23.9533H9.10775C9.55493 23.9533 9.93464 23.6284 10.005 23.1874L10.0422 22.9955L10.7533 18.4835L10.7989 18.2361C10.8684 17.7936 11.249 17.4687 11.6962 17.4687H12.261C15.9195 17.4687 18.7836 15.9833 19.6208 11.6848C19.9704 9.88921 19.7893 8.3899 18.864 7.33542C18.5841 7.01745 18.2367 6.75364 17.8305 6.53857Z"
+                        fill="#179BD7"
+                      />
+                      <path
+                        d="M16.8282 6.13988C16.6821 6.09732 16.5312 6.05864 16.3764 6.02383C16.2209 5.9898 16.0615 5.95963 15.8976 5.93333C15.3235 5.84048 14.6945 5.79639 14.0207 5.79639H8.33289C8.19281 5.79639 8.05986 5.8281 7.94072 5.88536C7.67838 6.01145 7.48351 6.2598 7.4363 6.56383L6.22615 14.2276L6.19141 14.4511C6.27113 13.9467 6.70206 13.5754 7.21338 13.5754H9.34239C13.524 13.5754 16.7982 11.8772 17.7551 6.96458C17.7836 6.81914 17.8077 6.67757 17.8293 6.53909C17.5872 6.41066 17.3249 6.3008 17.0425 6.20718C16.973 6.18397 16.9011 6.16155 16.8282 6.13988Z"
+                        fill="#222D65"
+                      />
+                      <path
+                        d="M7.4377 6.5637C7.48492 6.25964 7.68 6.01131 7.94212 5.88598C8.06215 5.82872 8.19444 5.79701 8.33429 5.79701H14.0223C14.6962 5.79701 15.3251 5.8411 15.899 5.93395C16.0631 5.96025 16.2226 5.99042 16.378 6.02445C16.5328 6.05928 16.6835 6.09796 16.8299 6.1405C16.9025 6.16217 16.9744 6.1846 17.0448 6.20704C17.3272 6.30064 17.5895 6.41128 17.8316 6.53893C18.1164 4.72319 17.8293 3.48691 16.8477 2.36744C15.7654 1.13504 13.8118 0.607422 11.3122 0.607422H4.05533C3.54468 0.607422 3.1093 0.978752 3.03024 1.48395L0.00775567 20.6432C-0.051928 21.0222 0.240478 21.3643 0.622631 21.3643H5.10291L6.22777 14.2274L7.4377 6.5637Z"
+                        fill="#253B80"
+                      />
+                    </svg>
+                  </label>
+                </div>
+
+                <div class="paye-with-inner">
+                  <input type="radio" name="pay-with" id="gpay" />
+                  <label for="gpay">
+                    <span>Pay with Gpay</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="58" height="24" viewBox="0 0 58 24" fill="none">
+                        <g clip-path="url(#clip0_718_3625)">
+                          <path d="M41.1128 7.0808C42.7073 7.0808 43.9394 7.51567 44.8816 8.3854C45.8238 9.25512 46.2587 10.4148 46.2587 11.8643V18.8221H44.2293V17.2276H44.1568C43.2871 18.5322 42.055 19.1845 40.6054 19.1845C39.3733 19.1845 38.2862 18.8221 37.4164 18.0974C36.6192 17.3726 36.1118 16.3579 36.1118 15.2707C36.1118 14.1111 36.5467 13.1689 37.4164 12.4441C38.2862 11.7194 39.5183 11.4294 40.9678 11.4294C42.2724 11.4294 43.2871 11.6469 44.0843 12.1542V11.6469C44.0843 10.9704 43.8318 10.294 43.3267 9.85322L43.2146 9.76246C42.6348 9.25512 41.91 8.96521 41.1128 8.96521C39.8807 8.96521 38.9385 9.47256 38.2862 10.4872L36.4017 9.3276C37.5614 7.80558 39.0834 7.0808 41.1128 7.0808ZM30.8935 2.15234C32.194 2.15234 33.4299 2.60488 34.418 3.4489L34.5898 3.60189C35.6045 4.47162 36.1118 5.77621 36.1118 7.15328C36.1118 8.53035 35.6045 9.76247 34.5898 10.7047C33.5751 11.6469 32.343 12.1542 30.8935 12.1542L27.4146 12.0817V18.8221H25.2402V2.15234H30.8935ZM41.4027 13.1689C40.533 13.1689 39.8082 13.3863 39.2284 13.8212C38.6485 14.1836 38.3586 14.6909 38.3586 15.3432C38.3586 15.923 38.6485 16.4304 39.0834 16.7203C39.5907 17.0827 40.1706 17.3001 40.7504 17.3001C41.5621 17.3001 42.3739 16.9844 43.0088 16.412L43.1421 16.2854C43.8669 15.6331 44.2293 14.8359 44.2293 13.9662C43.577 13.4588 42.6348 13.1689 41.4027 13.1689ZM31.0384 4.18171H27.4146V9.9799H31.0384C31.8357 9.9799 32.6329 9.68999 33.1403 9.11017C34.2999 8.02301 34.2999 6.21108 33.2127 5.12392L33.1403 5.05144C32.5604 4.47162 31.8357 4.10923 31.0384 4.18171ZM58 7.44319L50.8247 23.8955H48.6504L51.3321 18.1698L46.621 7.51567H48.9403L52.3468 15.7056H52.4192L55.7532 7.51567H58V7.44319Z" fill="#5F6368"/>
+                          <path d="M18.7906 10.6322C18.7906 9.97989 18.7181 9.32759 18.6456 8.67529H9.58594V12.3716H14.7318C14.5144 13.5313 13.8621 14.6184 12.8474 15.2707V17.6625H15.9639C17.7759 15.9955 18.7906 13.5313 18.7906 10.6322Z" fill="#4285F4"/>
+                          <path d="M9.59139 19.9816C12.2006 19.9816 14.3749 19.1119 15.9694 17.6624L12.8529 15.2706C11.9831 15.8504 10.896 16.2128 9.59139 16.2128C7.12716 16.2128 4.95284 14.5458 4.22807 12.2266H1.03906V14.6908C2.70604 17.9523 5.96752 19.9816 9.59139 19.9816Z" fill="#34A853"/>
+                          <path d="M4.22181 12.2265C3.78694 11.0669 3.78694 9.76226 4.22181 8.53015V6.06592H1.0328C-0.344267 8.74758 -0.344267 11.9366 1.0328 14.6907L4.22181 12.2265Z" fill="#FBBC04"/>
+                          <path d="M9.59508 4.61452C10.9722 4.61452 12.2767 5.12186 13.2914 6.06406L16.0456 3.30993C14.3061 1.71542 11.9868 0.773219 9.66756 0.845696C6.04369 0.845696 2.70974 2.87506 1.11523 6.13654L4.30424 8.60077C4.95653 6.2815 7.13085 4.61452 9.59508 4.61452Z" fill="#EA4335"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_718_3625">
+                            <rect width="58" height="23.1094" fill="white" transform="translate(0 0.84375)"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                  </label>
+                </div>
+              </div>
+
+              <!-- field 8 -->
+               <div class="submit-btn-wrapper submit-payment-wrapper">
+                <input type="submit" value="Place order"  class="continue-payment submit-btn" />
+               </div>              
+            </form>
           </div>
-          <!-- counter section ends -->
-          <!-- new items section starts -->
-          <div class="main-content-display-new-item-container">
-            <div class="new-items-header-section">
-              <h1>New</h1>
-              <a href="upload-new-product-and-service.html" class="upload-btn">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="25"
-                  viewBox="0 0 24 25"
-                  fill="none"
-                >
-                  <path
-                    d="M6 11.9702C5.44772 11.9702 5 12.4179 5 12.9702C5 13.5225 5.44772 13.9702 6 13.9702V11.9702ZM18 13.9702C18.5523 13.9702 19 13.5225 19 12.9702C19 12.4179 18.5523 11.9702 18 11.9702V13.9702ZM11 18.9702C11 19.5225 11.4477 19.9702 12 19.9702C12.5523 19.9702 13 19.5225 13 18.9702H11ZM13 6.97021C13 6.41793 12.5523 5.97021 12 5.97021C11.4477 5.97021 11 6.41793 11 6.97021H13ZM6 13.9702H12V11.9702H6V13.9702ZM12 13.9702H18V11.9702H12V13.9702ZM13 18.9702V12.9702H11V18.9702H13ZM13 12.9702V6.97021H11V12.9702H13Z"
-                    fill="white"
-                  />
-                </svg>
-                Upload New
-              </a>
-            </div>
 
-            <!-- card section -->
-            <div class="new-item-product-card-slider owl-carousel owl-theme">
-              <!-- item1 -->
-              <div class="item new-product-card">
-                <div class="new-product-card-header">
-                  <img src="assets/images/new-product-1.png" alt="" srcset="" />
-                  <button
-                    class="new-product-update-btn"
-                    data-bs-toggle="modal"
-                    data-bs-target="#update-modal-2"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="18"
-                      height="19"
-                      viewBox="0 0 18 19"
-                      fill="none"
-                    >
-                      <path
-                        d="M1 17.5563H17M1 17.5563V13.5563L9 5.55627M1 17.5563L5 17.5562L13 9.55626M9 5.55627L11.8686 2.68762L11.8704 2.68591C12.2652 2.29103 12.463 2.09324 12.691 2.01916C12.8919 1.9539 13.1082 1.9539 13.3091 2.01916C13.5369 2.09319 13.7345 2.29075 14.1288 2.68508L15.8686 4.42487C16.2646 4.82089 16.4627 5.01899 16.5369 5.24732C16.6022 5.44816 16.6021 5.66451 16.5369 5.86535C16.4628 6.09351 16.265 6.29132 15.8695 6.68677L15.8686 6.68762L13 9.55626M9 5.55627L13 9.55626"
-                        stroke="#01763F"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-                <div class="new-product-card-body">
-                  <div class="new-product-info">
-                    <h1>Razer Nari Headphones</h1>
-                    <p>
-                      <!-- if any -->
-                      <!-- <del>$ 75.00 </del> -->
-                      <span>$ 89.00</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- item2 -->
-              <div class="item new-product-card">
-                <div class="new-product-card-header">
-                  <img src="assets/images/new-product-2.png" alt="" srcset="" />
-                  <button
-                    class="new-product-update-btn"
-                    data-bs-toggle="modal"
-                    data-bs-target="#update-modal-1"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="18"
-                      height="19"
-                      viewBox="0 0 18 19"
-                      fill="none"
-                    >
-                      <path
-                        d="M1 17.5563H17M1 17.5563V13.5563L9 5.55627M1 17.5563L5 17.5562L13 9.55626M9 5.55627L11.8686 2.68762L11.8704 2.68591C12.2652 2.29103 12.463 2.09324 12.691 2.01916C12.8919 1.9539 13.1082 1.9539 13.3091 2.01916C13.5369 2.09319 13.7345 2.29075 14.1288 2.68508L15.8686 4.42487C16.2646 4.82089 16.4627 5.01899 16.5369 5.24732C16.6022 5.44816 16.6021 5.66451 16.5369 5.86535C16.4628 6.09351 16.265 6.29132 15.8695 6.68677L15.8686 6.68762L13 9.55626M9 5.55627L13 9.55626"
-                        stroke="#01763F"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-                <div class="new-product-card-body">
-                  <div class="new-product-info">
-                    <h1>Winter cloth cleaning</h1>
-                    <p>
-                      <del>$ 75.00 </del>
-                      <span> $ 5500/hr</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- item3 -->
-              <div class="item new-product-card">
-                <div class="new-product-card-header">
-                  <img src="assets/images/new-product-3.png" alt="" srcset="" />
-                  <button
-                    class="new-product-update-btn"
-                    data-bs-toggle="modal"
-                    data-bs-target="#update-modal-2"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="18"
-                      height="19"
-                      viewBox="0 0 18 19"
-                      fill="none"
-                    >
-                      <path
-                        d="M1 17.5563H17M1 17.5563V13.5563L9 5.55627M1 17.5563L5 17.5562L13 9.55626M9 5.55627L11.8686 2.68762L11.8704 2.68591C12.2652 2.29103 12.463 2.09324 12.691 2.01916C12.8919 1.9539 13.1082 1.9539 13.3091 2.01916C13.5369 2.09319 13.7345 2.29075 14.1288 2.68508L15.8686 4.42487C16.2646 4.82089 16.4627 5.01899 16.5369 5.24732C16.6022 5.44816 16.6021 5.66451 16.5369 5.86535C16.4628 6.09351 16.265 6.29132 15.8695 6.68677L15.8686 6.68762L13 9.55626M9 5.55627L13 9.55626"
-                        stroke="#01763F"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-                <div class="new-product-card-body">
-                  <div class="new-product-info">
-                    <h1>Amazfit GTR 3 S.Watch</h1>
-                    <p>
-                      <del>$ 119.99</del>
-                      <span>$ 89.00</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- item4 -->
-              <div class="item new-product-card">
-                <div class="new-product-card-header">
-                  <img
-                    src="assets/images/product-image-3.png"
-                    alt=""
-                    srcset=""
-                  />
-                  <button
-                    class="new-product-update-btn"
-                    data-bs-toggle="modal"
-                    data-bs-target="#update-modal-1"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="18"
-                      height="19"
-                      viewBox="0 0 18 19"
-                      fill="none"
-                    >
-                      <path
-                        d="M1 17.5563H17M1 17.5563V13.5563L9 5.55627M1 17.5563L5 17.5562L13 9.55626M9 5.55627L11.8686 2.68762L11.8704 2.68591C12.2652 2.29103 12.463 2.09324 12.691 2.01916C12.8919 1.9539 13.1082 1.9539 13.3091 2.01916C13.5369 2.09319 13.7345 2.29075 14.1288 2.68508L15.8686 4.42487C16.2646 4.82089 16.4627 5.01899 16.5369 5.24732C16.6022 5.44816 16.6021 5.66451 16.5369 5.86535C16.4628 6.09351 16.265 6.29132 15.8695 6.68677L15.8686 6.68762L13 9.55626M9 5.55627L13 9.55626"
-                        stroke="#01763F"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-                <div class="new-product-card-body">
-                  <div class="new-product-info">
-                    <h1>Full House Cleaning</h1>
-                    <p>
-                      <del>$ 119.99</del>
-                      <span>$ 89.99/hr</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- modal section starts -->
-
-            <!-- Product update modal -->
-            <div
-              class="modal fade"
-              id="update-modal-1"
-              tabindex="-1"
-              aria-labelledby="update-modal-1"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-lg modal-dialog-scrollable">
-                <form class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-header-title" id="update-modal-1">
-                      Edit Product
-                    </h5>
-                    <button
-                      type="button"
-                      class="btn-close modal-close-btn"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <div action="" class="upload-form">
-                      <!-- Name -->
-                      <div class="upload-form-input-wrapper">
-                        <label for="product-name">Product Name</label>
-                        <input
-                          type="text"
-                          id="product-name"
-                          name="product-name"
-                          required
-                        />
-                      </div>
-                      <!-- Description -->
-                      <div class="upload-form-input-wrapper">
-                        <label for="product-description">Description</label>
-                        <textarea
-                          name="product-description"
-                          id="product-description"
-                          required
-                        ></textarea>
-                      </div>
-
-                      <!-- Price -->
-                      <div
-                        class="upload-form-input-wrapper price-input-wrapper"
-                      >
-                        <div class="upload-form-inner-input-wrapper">
-                          <label for="product-price">Sale Price</label>
-                          <input
-                            type="text"
-                            id="product-price"
-                            name="product-price"
-                            required
-                          />
-                        </div>
-                        <div class="upload-form-inner-input-wrapper">
-                          <label for="product-discount">Discount</label>
-                          <input
-                            type="text"
-                            id="product-discount"
-                            name="product-discount"
-                            required
-                          />
-                        </div>
-                      </div>
-                      <!-- Select Color -->
-                      <div
-                        class="upload-form-input-wrapper color-input-wrapper"
-                      >
-                        <label>Select Color</label>
-                        <div class="color-wrapper">
-                          <input
-                            type="text"
-                            name="color"
-                            id="dark-gray"
-                            value="dark-gray"
-                            required
-                          />
-
-                          <input
-                            type="text"
-                            name="color"
-                            id="black"
-                            value="black"
-                            required
-                          />
-
-                          <input
-                            type="text"
-                            name="color"
-                            id="white"
-                            value="white"
-                            required
-                          />
-
-                          <input
-                            type="text"
-                            name="color"
-                            id="olive"
-                            value="olive"
-                            required
-                          />
-                        </div>
-                      </div>
-
-                      <!-- Tags -->
-                      <div class="upload-form-input-wrapper">
-                        <label for="product-tags">Tags</label>
-                        <input
-                          type="text"
-                          id="product-tags"
-                          name="product-tags"
-                          placeholder="Type and enter"
-                          required
-                        />
-                      </div>
-
-                      <!-- image upload section -->
-                      <div class="upload-form-image-input-wrapper">
-                        <label>Product Images</label>
-                        <label
-                          for="product-images"
-                          class="image-upload-container"
-                          data-product-image-container
-                        >
-                          <span class="upload-sign">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="20"
-                              height="21"
-                              viewBox="0 0 20 21"
-                              fill="none"
-                            >
-                              <path
-                                d="M6.6665 13.8333L9.99984 10.5M9.99984 10.5L13.3332 13.8333M9.99984 10.5V18M16.6665 14.4524C17.6844 13.6117 18.3332 12.3399 18.3332 10.9167C18.3332 8.38536 16.2811 6.33333 13.7498 6.33333C13.5677 6.33333 13.3974 6.23833 13.3049 6.08145C12.2182 4.23736 10.2119 3 7.9165 3C4.46472 3 1.6665 5.79822 1.6665 9.25C1.6665 10.9718 2.36271 12.5309 3.48896 13.6613"
-                                stroke="#475467"
-                                stroke-width="1.66667"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                            </svg>
-                          </span>
-                          <div class="image-upload-text">
-                            <span>Click to upload</span
-                            ><span> or drag and drop</span>
-                          </div>
-                          <h5>PNG or JPG (max. 400x400px)</h5>
-                        </label>
-                        <input
-                          type="file"
-                          id="product-image"
-                          name="product-images"
-                          accept="image/*"
-                          multiple
-                          required
-                          data-product-image-upload-input
-                        />
-                        <!-- product image preview -->
-                        <div
-                          id="product-image-preview"
-                          class="image-preview"
-                          data-product-image-preview
-                        ></div>
-                        <p>
-                          You need at least 4 images. Pay attention to the
-                          quality of the pictures you add (importent)
-                        </p>
-                      </div>
-
-                      <!-- Category -->
-                      <div class="upload-form-input-wrapper">
-                        <label for="product-category">Publish Category</label>
-                        <select
-                          name="product-category"
-                          id="product-category"
-                          required
-                        >
-                          <option value="hat">Hat</option>
-                          <option value="hat">Mobile Accessories</option>
-                          <option value="hat">Electronics</option>
-                          <option value="hat">Vehicles</option>
-                          <option value="hat">Toy</option>
-                          <option value="hat">Fashion</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer upload-form-button-wrapper">
-                    <button type="submit" class="upload-form-submit-btn">
-                      Publish Update
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-
-            <!-- Service Update modal -->
-            <div
-              class="modal fade"
-              id="update-modal-2"
-              tabindex="-1"
-              aria-labelledby="update-modal-2"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-lg modal-dialog-scrollable">
-                <form class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-header-title" id="update-modal-2">
-                      Edit Service
-                    </h5>
-                    <button
-                      type="button"
-                      class="btn-close modal-close-btn"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <div action="" class="upload-form">
-                      <!-- Name -->
-                      <div class="upload-form-input-wrapper">
-                        <label for="service-name">Service Name</label>
-                        <input
-                          type="text"
-                          id="service-name"
-                          name="service-name"
-                          required
-                        />
-                      </div>
-                      <!-- Description -->
-                      <div class="upload-form-input-wrapper">
-                        <label for="service-description">Description</label>
-                        <textarea
-                          name="service-description"
-                          id="service-description"
-                          required
-                        ></textarea>
-                      </div>
-
-                      <!-- Date -->
-                      <div class="upload-form-input-wrapper date-picker">
-                        <label for="service-date">Date</label>
-                        <input
-                          type="text"
-                          id="service-date"
-                          name="service-date"
-                          required
-                        />
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                        >
-                          <path
-                            d="M16 2V5"
-                            stroke="#28303F"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                          />
-                          <path
-                            d="M8 2V5"
-                            stroke="#28303F"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                          />
-                          <path
-                            d="M3 7.5C3 5.29086 4.79086 3.5 7 3.5H17C19.2091 3.5 21 5.29086 21 7.5V18C21 20.2091 19.2091 22 17 22H7C4.79086 22 3 20.2091 3 18V7.5Z"
-                            stroke="#28303F"
-                            stroke-width="1.5"
-                          />
-                          <path
-                            d="M3 9H21"
-                            stroke="#28303F"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                          />
-                        </svg>
-                      </div>
-
-                      <!-- Price -->
-                      <div
-                        class="upload-form-input-wrapper price-input-wrapper"
-                      >
-                        <div class="upload-form-inner-input-wrapper">
-                          <label for="service-price">Price</label>
-                          <input
-                            type="text"
-                            id="service-price"
-                            name="service-price"
-                            required
-                          />
-                        </div>
-                        <div class="upload-form-inner-input-wrapper">
-                          <label for="service-completion-time"
-                            >Completion Time</label
-                          >
-                          <input
-                            type="text"
-                            id="service-completion-time"
-                            name="service-completion-time"
-                            required
-                          />
-                        </div>
-                      </div>
-                      <!-- Pickup location -->
-                      <div class="upload-form-input-wrapper">
-                        <label for="service-pickup-loction"
-                          >Pickup Location</label
-                        >
-                        <input
-                          type="text"
-                          id="service-pickup-loction"
-                          name="service-pickup-loction"
-                          required
-                        />
-                      </div>
-
-                      <!-- Tags -->
-                      <div class="upload-form-input-wrapper">
-                        <label for="service-tags">Tags</label>
-                        <input
-                          type="text"
-                          id="service-tags"
-                          name="service-tags"
-                          placeholder="Type and enter"
-                          required
-                        />
-                      </div>
-
-                      <!-- Image upload section -->
-                      <div class="upload-form-image-input-wrapper">
-                        <label>Product Images</label>
-                        <label
-                          for="service-images"
-                          class="image-upload-container"
-                          data-service-image-container
-                        >
-                          <span class="upload-sign">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="20"
-                              height="21"
-                              viewBox="0 0 20 21"
-                              fill="none"
-                            >
-                              <path
-                                d="M6.6665 13.8333L9.99984 10.5M9.99984 10.5L13.3332 13.8333M9.99984 10.5V18M16.6665 14.4524C17.6844 13.6117 18.3332 12.3399 18.3332 10.9167C18.3332 8.38536 16.2811 6.33333 13.7498 6.33333C13.5677 6.33333 13.3974 6.23833 13.3049 6.08145C12.2182 4.23736 10.2119 3 7.9165 3C4.46472 3 1.6665 5.79822 1.6665 9.25C1.6665 10.9718 2.36271 12.5309 3.48896 13.6613"
-                                stroke="#475467"
-                                stroke-width="1.66667"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                            </svg>
-                          </span>
-                          <div class="image-upload-text">
-                            <span>Click to upload</span
-                            ><span> or drag and drop</span>
-                          </div>
-                          <h5>PNG or JPG (max. 400x400px)</h5>
-                        </label>
-                        <input
-                          type="file"
-                          id="service-images"
-                          name="service-images"
-                          accept="image/*"
-                          multiple
-                          required
-                          data-service-image-upload-input
-                        />
-                        <!-- product image preview -->
-                        <div
-                          id="service-image-preview"
-                          data-service-image-preview
-                          class="image-preview"
-                        ></div>
-                        <p>
-                          You need at least 4 images. Pay attention to the
-                          quality of the pictures you add (importent)
-                        </p>
-                      </div>
-
-                      <!-- Category -->
-                      <div class="upload-form-input-wrapper">
-                        <label for="service-category">Publish Category</label>
-                        <select
-                          name="service-category"
-                          id="service-category"
-                          required
-                        >
-                          <option value="hat">Home Cleaning</option>
-                          <option value="hat">Rooftop Cleaning</option>
-                          <option value="hat">Electronics</option>
-                          <option value="hat">Vehicles</option>
-                          <option value="hat">Toy</option>
-                          <option value="hat">Fashion</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer upload-form-button-wrapper">
-                    <button type="submit" class="upload-form-submit-btn">
-                      Publish Update
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <!-- modals end -->
-
-            <!-- modal section ends -->
-          </div>
-          <!-- new items section ends -->
-
-          <!-- Recent posts you shared section start -->
-          <div class="main-content-display-recent-posts-container">
-            <div class="recent-posts-shared-header-section">
-              <h2>Recent Post’s you shared</h2>
-              <button class="add-new-post-btn">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="25"
-                  viewBox="0 0 24 25"
-                  fill="none"
-                >
-                  <path
-                    d="M6 11.3867C5.44772 11.3867 5 11.8344 5 12.3867C5 12.939 5.44772 13.3867 6 13.3867V11.3867ZM18 13.3867C18.5523 13.3867 19 12.939 19 12.3867C19 11.8344 18.5523 11.3867 18 11.3867V13.3867ZM11 18.3867C11 18.939 11.4477 19.3867 12 19.3867C12.5523 19.3867 13 18.939 13 18.3867H11ZM13 6.38672C13 5.83443 12.5523 5.38672 12 5.38672C11.4477 5.38672 11 5.83443 11 6.38672H13ZM6 13.3867H12V11.3867H6V13.3867ZM12 13.3867H18V11.3867H12V13.3867ZM13 18.3867V12.3867H11V18.3867H13ZM13 12.3867V6.38672H11V12.3867H13Z"
-                    fill="white"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-          <!-- Recent posts you shared section ends -->
+          <!-- payment section ends -->
         </div>
       </div>
     </main>

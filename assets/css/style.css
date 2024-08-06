@@ -139,6 +139,9 @@ section {
   height: 60px;
 }
 
+.modal-body{
+  overflow-x: hidden;
+}
 input[type="checkbox"],
 input[type="radio"] {
   cursor: pointer;
@@ -946,11 +949,21 @@ button {
 }
 .category-slider::-webkit-scrollbar{
   background-color: transparent;
-  width: 0;
-  height: 0;
+  width: 8px;
+  height: 4px;
 }
 .category-slider::-webkit-scrollbar-thumb{
   background-color: transparent;
+}
+.category-slider input[type="checkbox"]{
+  display: none;
+}
+
+.category-slider input[type="checkbox"]:checked + label{
+  border-radius: 126.694px;
+  border: 1.545px solid #01763f;
+  background: rgba(1, 118, 63, 0.09);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .category-box {
   width: fit-content;

@@ -13,11 +13,7 @@
   <link rel="stylesheet" type="text/css" href="./assets/css/plugins/bootstrap-icons.min.css" />
   <link rel="stylesheet" type="text/css" href="./assets/css/plugins/owl.carousel.min.css" />
   <link rel="stylesheet" type="text/css" href="./assets/css/plugins/nice-select.min.css" />
-  <link rel="stylesheet" type="text/css" href="./assets/css/plugins/swiper-bundle.min.css" />
-  <link rel="stylesheet" type="text/css" href="./assets/css/plugins/magnific-popup.min.css" />
   <link rel="stylesheet" type="text/css" href="./assets/css/plugins/aos.css" />
-  <!-- Jarallax CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.css" rel="stylesheet" />
   <!-- flatpicker Css -->
   <link rel="stylesheet" href="./assets/css/plugins/flatpickr.min.css">
   <!-- custom css -->
@@ -39,14 +35,14 @@
       <div class="side-bar-container">
         <!-- header section -->
         <div class="side-bar-left-side">
-          <div class="side-bar-header">
+          <a href="index.html" class="side-bar-header">
             <div class="logo-image">
               <img src="assets/images/main-icon.png" alt="" />
             </div>
             <div class="logo-name">
               <h4>Community <span>Base</span></h4>
             </div>
-          </div>
+          </a>
           <hr />
           <!-- side bar menu content -->
           <div class="side-bar-menu-content">
@@ -448,20 +444,26 @@
         <div class="categories-section">
           <h1>Categories</h1>
           <div class="categories-list-container">
-            <div class="category-slider owl-carousel ">
-              <div class="category-box category-box-1">🚗 Vehicles</div>
-              <div class="category-box category-box-2">⚡ Electronics</div>
-              <div class="category-box category-box-3">🧸 Toy</div>
-              <div class="category-box category-box-4">👚 Fashion</div>
-              <div class="category-box category-box-5">📱 Mobile accessories</div>
-              <div class="category-box category-box-6">🛏️ Furniture</div>
-              <div class="category-box category-box-1">🚗 Vehicles</div>
-              <div class="category-box category-box-2">⚡ Electronics</div>
-              <div class="category-box category-box-3">🧸 Toy</div>
-              <div class="category-box category-box-4">👚 Fashion</div>
-              <div class="category-box category-box-5">📱 Mobile accessories</div>
-              <div class="category-box category-box-6">🛏️ Furniture</div>
-            </div>
+            <form class="category-slider">
+              <input type="checkbox" id="category-1" name="category" />
+              <label  class="category-box category-box-1"  for="category-1">🚗 Vehicles</label>
+
+              <input type="checkbox" id="category-2" name="category" />
+              <label class="category-box category-box-2" for="category-2">⚡ Electronics</label>
+
+              <input type="checkbox" id="category-3" name="category" />
+              <label class="category-box category-box-3" for="category-3">🧸 Toy</label>
+
+              <input type="checkbox" id="category-4" name="category" />
+              <label class="category-box category-box-4" for="category-4">👚 Fashion</label>
+
+              <input type="checkbox" id="category-5" name="category" />
+              <label class="category-box category-box-5" for="category-5">📱 Mobile accessories</label>
+
+              <input type="checkbox" id="category-6" name="category" />
+              <label class="category-box category-box-6" for="category-6">🛏️ Furniture</label>
+              
+            </form>
           </div>
 
         </div>

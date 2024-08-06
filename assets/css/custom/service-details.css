@@ -162,6 +162,7 @@
     letter-spacing: -0.3px;
     text-transform: capitalize;
     transition: var(--base-transition);
+    text-wrap: nowrap;
 }
 
 .product-info-tab-btn.tab-active {
@@ -769,3 +770,823 @@
   }
 
 /* product details page ends */
+
+
+
+@media only screen and (min-width: 1366px) and (max-width: 1919px) {
+  
+}
+
+
+  /* laptop devices */
+  @media only screen and (min-width: 1200px) and (max-width: 1365px) {
+  
+  }
+  
+  /* large tablet devices */
+  @media only screen and (min-width:992px) and (max-width: 1199px) {
+    .product-preview-image-container{
+        height: 550px;
+    }
+     /* service provide info starts */
+    
+    .profile-raitings-section {
+        
+        padding: 36px 15px;
+       
+    }
+    .overall-ratings-side p{
+        font-size: 12px;
+    }
+    .overall-ratings-side h1{
+        font-size: 30px;
+    }
+    .stars {
+        gap: 5px;
+    }
+    .stars svg{
+        width: 20px;
+        height: 20px;
+    }
+    /* service provide info ends*/
+  }
+  
+  /* medium tablet devices */
+  @media only screen and (min-width:768px) and (max-width: 991px) {
+    .upload-new-product-and-service-header.seller-profile-view {
+        padding: 28px 50px 28px 38px;
+    }
+    .single-product-details-section {
+        padding: 0 50px 0  38px;
+        gap: 20px;
+    }
+    .single-product-details-container{
+        padding: 0;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .single-product-description-container{
+        padding: 0;
+    }
+    .product-preview-side{
+        width: 100%;
+        gap: 10px;
+    }
+    .product-preview-image-container{
+        height: 500px;
+        border-radius: 15px;
+    }
+    .product-details-side{
+        width: 100%;
+        gap: 10px;
+    }
+
+    /* service provide info starts */
+    .review-and-comments-section{
+        padding: 0;
+    }
+    .profile-raitings-section {
+        
+        padding: 36px 15px;
+       
+    }
+    .overall-ratings-side p{
+        font-size: 12px;
+    }
+    .overall-ratings-side h1{
+        font-size: 30px;
+    }
+    .stars {
+        gap: 5px;
+    }
+    .stars svg{
+        width: 20px;
+        height: 20px;
+    }
+    /* service provide info ends*/
+  }
+  
+  
+  
+  /* small tablet devices */
+  
+  @media only screen and (min-width:576px) and (max-width: 767px) {
+    .back-btn {
+        width: 50px;
+        height: 50px;
+        padding: 15px;
+    }
+    .upload-new-product-and-service-header {
+        padding: 10px 15px;
+    }
+    .upload-new-product-and-service-header h2 {
+        font-size: 22px;
+    }
+    .single-product-details-section {
+        padding: 0 10px;
+        gap: 20px;
+    }
+    .single-product-details-container{
+        padding: 0;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .product-preview-side{
+        width: 100%;
+        gap: 10px;
+    }
+    .product-preview-image-container{
+        height: 500px;
+        border-radius: 15px;
+    }
+    .product-details-side{
+        width: 100%;
+        gap: 10px;
+    }
+    .thumbnail-item{
+        width: 90px;
+        height: 90px;
+        min-height: 90px;
+        min-width: 90px;
+    }
+    .product-details-price-name{
+        gap: 5px;
+    }
+    .product-details-price-name h1{
+        font-size: 24px;
+        line-height: normal;
+    }
+    .product-details-price-name h3{
+        font-size: 18px;
+        line-height: normal;
+    }
+    .product-info-tab-btn-container button{
+        font-size: 14px;
+    }
+    .product-info-tab{
+        gap: 10px;
+    }
+    .color-section{
+        gap: 10px;
+    }
+    .color-header span{
+        font-size: 16px !important;
+    }
+    .product-specs-section {
+        gap: 10px !important;
+    }
+    .specs-item span{
+        font-size: 14px;
+    }
+    .choose-quantity-container .nice-select {
+        height: 50px;
+    }
+    .choose-quantity-container .nice-select::after{
+        width: 6px;
+        height: 6px;
+    }
+    .choose-quantity-container .nice-select .current{
+        font-size: 14px;
+    }
+    
+    .add-to-cart-btn-container .add-to-cart-btn{
+        font-size: 14px;
+        padding: 12px;
+    }
+    .single-product-description-container{
+        padding: 0 0;
+        gap: 12px;
+    }
+    .single-product-description-container h1 {
+        font-size: 20px;
+    }
+    .single-product-description-container p{
+        font-size: 14px;
+    }
+    
+        /* service provider info starts */
+        .service-provider-info-scetion{
+            gap: 12px;
+        }
+        .service-provider-info-scetion h1{
+            font-size: 16px;
+        }
+        .provider-box{
+            padding: 10px 15px;
+            gap: 15px;
+            justify-content: center;
+        }
+        .provider-rating{
+            justify-content: flex-start;
+        }
+        .provider-rating p{
+            font-size: 12px;
+        }
+        .stars{
+            gap: 2px;
+        }
+        .stars span svg{
+            width: 15px;
+            height: 15px;
+        }
+        .image {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+        }
+        .review-and-comments-section {
+            width: 100%;
+            padding: 0 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .profile-raitings-section{
+            padding: 20px;
+            flex-direction: column;
+            gap: 15px;
+            align-items: flex-start;
+        }
+        .progress-bar-side{
+            width: 100%;
+        }
+        .overall-ratings-side{
+            width: 100%;
+            gap: 8px;
+        }
+        .overall-ratings-side p{
+            font-size: 14px;
+        }
+        .overall-ratings-side h1{
+            font-size: 24px;
+        }
+        .rating-name{
+            text-align: start;
+            text-transform: capitalize;
+           
+        }
+        .progress-list {
+            width: 100%;
+            column-gap: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+           
+            row-gap: 10px;
+            
+        }
+        .review-container{
+            flex-direction: column;
+            gap: 10px;
+        }
+        .review-inner{
+            width: 100%;
+            padding: 10px;
+        }
+        /* service provide info ends */
+  
+  }
+  
+  
+  /* large mobile devices */
+  
+  @media only screen and (min-width:480px) and (max-width: 575px) {
+    .back-btn {
+        width: 50px;
+        height: 50px;
+        padding: 15px;
+    }
+    .upload-new-product-and-service-header {
+        padding: 10px 15px;
+    }
+    .upload-new-product-and-service-header h2 {
+        font-size: 22px;
+    }
+    .single-product-details-section {
+        padding: 0 10px;
+
+        gap: 20px;
+    }
+    .single-product-details-container{
+        padding: 0;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .product-preview-side{
+        width: 100%;
+        gap: 10px;
+    }
+    .product-preview-image-container{
+        height: 290px;
+        border-radius: 15px;
+    }
+    .product-details-side{
+        width: 100%;
+        gap: 10px;
+    }
+    .thumbnail-item{
+        width: 90px;
+        height: 90px;
+        min-height: 90px;
+        min-width: 90px;
+    }
+    .product-details-price-name{
+        gap: 5px;
+    }
+    .product-details-price-name h1{
+        font-size: 24px;
+        line-height: normal;
+    }
+    .product-details-price-name h3{
+        font-size: 18px;
+        line-height: normal;
+    }
+    .product-info-tab-btn-container button{
+        font-size: 14px;
+    }
+    .product-info-tab{
+        gap: 10px;
+    }
+    .color-section{
+        gap: 10px;
+    }
+    .color-header span{
+        font-size: 16px !important;
+    }
+    .product-specs-section {
+        gap: 10px !important;
+    }
+    .specs-item span{
+        font-size: 14px;
+    }
+    .choose-quantity-container .nice-select {
+        height: 50px;
+    }
+    .choose-quantity-container .nice-select::after{
+        width: 6px;
+        height: 6px;
+    }
+    .choose-quantity-container .nice-select .current{
+        font-size: 14px;
+    }
+    
+    .add-to-cart-btn-container .add-to-cart-btn{
+        font-size: 14px;
+        padding: 12px;
+    }
+    .single-product-description-container{
+        padding: 0 0;
+        gap: 12px;
+    }
+    .single-product-description-container h1 {
+        font-size: 20px;
+    }
+    .single-product-description-container p{
+        font-size: 14px;
+    }
+
+        /* service provider info starts */
+        .service-provider-info-scetion{
+            gap: 12px;
+        }
+        .service-provider-info-scetion h1{
+            font-size: 16px;
+        }
+        .provider-box{
+            padding: 10px 15px;
+            gap: 15px;
+            justify-content: center;
+        }
+        .provider-rating{
+            justify-content: flex-start;
+        }
+        .provider-rating p{
+            font-size: 12px;
+        }
+        .stars{
+            gap: 2px;
+        }
+        .stars span svg{
+            width: 15px;
+            height: 15px;
+        }
+        .image {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+        }
+        .review-and-comments-section {
+            width: 100%;
+            padding: 0 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .profile-raitings-section{
+            padding: 10px;
+            flex-direction: column;
+            gap: 15px;
+            align-items: flex-start;
+        }
+        .progress-bar-side{
+            width: 100%;
+        }
+        .overall-ratings-side{
+            width: 100%;
+            gap: 8px;
+        }
+        .overall-ratings-side p{
+            font-size: 14px;
+        }
+        .overall-ratings-side h1{
+            font-size: 24px;
+        }
+        .rating-name{
+            text-align: start;
+            text-transform: capitalize;
+            width: 100%;
+        }
+        .progress-list {
+            width: 100%;
+            column-gap: 12px;
+            align-items: center;
+            justify-content: space-between;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 10px;
+            
+        }
+        .review-container{
+            flex-direction: column;
+            gap: 10px;
+        }
+        .review-inner{
+            width: 100%;
+            padding: 10px;
+        }
+        /* service provide info ends */
+  
+  }
+  
+  
+  
+  
+  /* mobile device */
+  @media only screen and (min-width:375px) and (max-width: 479px) {
+    .back-btn {
+        width: 50px;
+        height: 50px;
+        padding: 15px;
+    }
+    .upload-new-product-and-service-header {
+        padding: 10px 15px;
+    }
+    .upload-new-product-and-service-header h2 {
+        font-size: 22px;
+    }
+    .single-product-details-section {
+        padding: 0 10px;
+
+        gap: 20px;
+    }
+    .single-product-details-container{
+        padding: 0;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .product-preview-side{
+        width: 100%;
+        gap: 10px;
+    }
+    .product-preview-image-container{
+        height: 290px;
+        border-radius: 15px;
+    }
+    .product-details-side{
+        width: 100%;
+        gap: 10px;
+    }
+    .thumbnail-item{
+        width: 60px;
+        height: 60px;
+        min-height: 60px;
+        min-width: 60px;
+    }
+    .product-details-price-name{
+        gap: 5px;
+    }
+    .product-details-price-name h1{
+        font-size: 18px;
+        line-height: normal;
+    }
+    .product-details-price-name h3{
+        font-size: 14px;
+        line-height: normal;
+    }
+    .product-info-tab-btn-container button{
+        font-size: 14px;
+    }
+    .product-info-tab{
+        gap: 10px;
+    }
+    .color-section{
+        gap: 10px;
+    }
+    .color-header span{
+        font-size: 16px !important;
+    }
+    .product-specs-section {
+        gap: 10px !important;
+    }
+    .specs-item span{
+        font-size: 12px;
+    }
+    .choose-quantity-container .nice-select {
+        height: 50px;
+    }
+    .choose-quantity-container .nice-select::after{
+        width: 6px;
+        height: 6px;
+    }
+    .choose-quantity-container .nice-select .current{
+        font-size: 12px;
+    }
+    
+    .add-to-cart-btn-container .add-to-cart-btn{
+        font-size: 14px;
+        padding: 12px;
+    }
+    .single-product-description-container{
+        padding: 0 0;
+        gap: 12px;
+    }
+    .single-product-description-container h1 {
+        font-size: 20px;
+    }
+    .single-product-description-container p{
+        font-size: 14px;
+    }
+
+    /* service provider info starts */
+    .service-provider-info-scetion{
+        gap: 12px;
+    }
+    .service-provider-info-scetion h1{
+        font-size: 16px;
+    }
+    .provider-box{
+        padding: 10px 15px;
+        gap: 15px;
+        justify-content: center;
+    }
+    .provider-rating{
+        justify-content: flex-start;
+    }
+    .provider-rating p{
+        font-size: 12px;
+    }
+    .stars{
+        gap: 2px;
+    }
+    .stars span svg{
+        width: 15px;
+        height: 15px;
+    }
+    .image {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+    .review-and-comments-section {
+        width: 100%;
+        padding: 0 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .profile-raitings-section{
+        padding: 10px;
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+    .progress-bar-side{
+        width: 100%;
+    }
+    .overall-ratings-side{
+        width: 100%;
+        gap: 8px;
+    }
+    .overall-ratings-side p{
+        font-size: 14px;
+    }
+    .overall-ratings-side h1{
+        font-size: 24px;
+    }
+    .rating-name{
+        text-align: start;
+        text-transform: capitalize;
+        width: 100%;
+    }
+    .progress-list {
+        width: 100%;
+        display: flex;
+        column-gap: 12px;
+        align-items: center;
+        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .review-container{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .review-inner{
+        width: 100%;
+        padding: 10px;
+    }
+    /* service provide info ends */
+  
+  }
+  
+  
+  
+  /* extra small devices */
+  @media only screen and (max-width: 374px) {
+    .back-btn {
+        width: 50px;
+        height: 50px;
+        padding: 15px;
+    }
+    .upload-new-product-and-service-header {
+        padding: 10px 15px;
+    }
+    .upload-new-product-and-service-header h2 {
+        font-size: 22px;
+    }
+    .single-product-details-section {
+        padding: 0 10px;
+
+        gap: 20px;
+    }
+
+    /* service provider info starts */
+    .service-provider-info-scetion{
+        gap: 12px;
+    }
+    .service-provider-info-scetion h1{
+        font-size: 16px;
+    }
+    .provider-box{
+        padding: 10px 15px;
+        gap: 15px;
+        justify-content: center;
+    }
+    .provider-rating{
+        justify-content: flex-start;
+    }
+    .provider-rating p{
+        font-size: 12px;
+    }
+    .stars{
+        gap: 2px;
+    }
+    .stars span svg{
+        width: 15px;
+        height: 15px;
+    }
+    .image {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+    .review-and-comments-section {
+        width: 100%;
+        padding: 0 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .profile-raitings-section{
+        padding: 10px;
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+    .progress-bar-side{
+        width: 100%;
+    }
+    .overall-ratings-side{
+        width: 100%;
+        gap: 8px;
+    }
+    .overall-ratings-side p{
+        font-size: 14px;
+    }
+    .overall-ratings-side h1{
+        font-size: 24px;
+    }
+    .rating-name{
+        text-align: start;
+        text-transform: capitalize;
+        width: 100%;
+    }
+    .progress-list {
+        width: 100%;
+        display: flex;
+        column-gap: 12px;
+        align-items: center;
+        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .review-container{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .review-inner{
+        width: 100%;
+        padding: 10px;
+    }
+    /* service provide info ends */
+    .single-product-details-container{
+        padding: 0;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .product-preview-side{
+        width: 100%;
+        gap: 10px;
+    }
+    .product-preview-image-container{
+        height: 290px;
+        border-radius: 15px;
+    }
+    .product-details-side{
+        width: 100%;
+        gap: 10px;
+    }
+    .thumbnail-item{
+        width: 60px;
+        height: 60px;
+        min-height: 60px;
+        min-width: 60px;
+    }
+    .product-details-price-name{
+        gap: 5px;
+    }
+    .product-details-price-name h1{
+        font-size: 18px;
+        line-height: normal;
+    }
+    .product-details-price-name h3{
+        font-size: 14px;
+        line-height: normal;
+    }
+    .product-info-tab-btn-container button{
+        font-size: 14px;
+    }
+    .product-info-tab{
+        gap: 10px;
+    }
+    .color-section{
+        gap: 10px;
+    }
+    .color-header span{
+        font-size: 16px !important;
+    }
+    .product-specs-section {
+        gap: 10px !important;
+    }
+    .specs-item span{
+        font-size: 12px;
+    }
+    .choose-quantity-container .nice-select {
+        height: 50px;
+    }
+    .choose-quantity-container .nice-select::after{
+        width: 6px;
+        height: 6px;
+    }
+    .choose-quantity-container .nice-select .current{
+        font-size: 12px;
+    }
+    
+    .add-to-cart-btn-container .add-to-cart-btn{
+        font-size: 14px;
+        padding: 12px;
+    }
+    .single-product-description-container{
+        padding: 0 0;
+        gap: 12px;
+    }
+    .single-product-description-container h1 {
+        font-size: 20px;
+    }
+    .single-product-description-container p{
+        font-size: 14px;
+    }
+  }
+
