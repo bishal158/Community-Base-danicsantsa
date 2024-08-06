@@ -638,6 +638,8 @@ button {
 .notification-button {
   display: flex;
   width: 60px;
+  min-width: 60px;
+  min-height: 60px;
   height: 60px;
   padding: 2px 3px;
   justify-content: center;
@@ -2178,6 +2180,8 @@ input[type="range"]::-moz-range-thumb {
 .nr--whyUs--svg{
   width: 50px;
   height: 50px;
+  min-width: 50px;
+  min-height: 50px;
 }
 .nr--whyUs--svg svg{
   height: 100%;

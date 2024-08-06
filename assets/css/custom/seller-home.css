@@ -1565,11 +1565,15 @@ font-size: 14px;
     padding: 12px 12px !important;
     justify-content: center !important;
     align-items: center !important;
-    ;
+    max-width: 76px !important;
     gap: 8px !important;
     margin-right: 0 !important;
+    
   }
-
+  .statics-btn img{
+    width: 15px;
+    height: 21px;
+  }
   .main-content-display-counter-container {
     padding: 0 10px;
   }
