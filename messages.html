@@ -14,8 +14,6 @@
   <link rel="stylesheet" type="text/css" href="./assets/css/plugins/owl.carousel.min.css" />
   <link rel="stylesheet" type="text/css" href="./assets/css/plugins/nice-select.min.css" />
   <link rel="stylesheet" type="text/css" href="./assets/css/plugins/aos.css" />
-
-
   <!-- flatpicker Css -->
   <link rel="stylesheet" href="./assets/css/plugins/flatpickr.min.css">
   <!-- custom css -->
@@ -160,7 +158,7 @@
         <!-- Message page header section starts -->
         <div class="message-header-section" data-aos="fade-down" data-aos-duration="500">
           <h1>Messages</h1>
-          <div class="controller-section">
+          <div class="controller-section message-header">
             <a href="notification.html" class="notification-button">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path
@@ -188,7 +186,7 @@
 
         <!-- Message page message section starts -->
         <div class="messaging-section-container" data-aos="fade-up" data-aos-duration="500">
-          <div class="chatting-list-container">
+          <div class="chatting-list-container"  id="chating-list-container"  >
             <div class="chatlist-search-container">
               <div class="chatlist-search-wrapper">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 31 31" fill="none">
@@ -197,9 +195,12 @@
                     stroke="#798680" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <input type="text" name="search" id="search" placeholder="Search for chats..." />
+                <svg id="close-chat-list" xmlns="http://www.w3.org/2000/svg" width="59" height="59" viewBox="0 0 59 59" fill="none">
+                  <path d="M51.4499 51.5012L29.5501 29.6014M29.5501 29.6014L7.65002 7.70135M29.5501 29.6014L51.4502 7.70135M29.5501 29.6014L7.65002 51.5015" stroke="#121715" stroke-width="3.65" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
               </div>
             </div>
-            <ul class="chatlists-container">
+            <ul class="chatlists-container" id="all-chats-container">
               <!-- chat user -1 -->
               <li class="chatlist-box-wrapper">
                 <div class="chatlist-box active">
@@ -852,11 +853,9 @@
                     </defs>
                   </svg>
                 </button>
-                <button class="single-chat-user-call">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path
-                      d="M12 9.375C12.5192 9.375 13.0267 9.52895 13.4584 9.81739C13.8901 10.1058 14.2265 10.5158 14.4252 10.9955C14.6239 11.4751 14.6758 12.0029 14.5746 12.5121C14.4733 13.0213 14.2233 13.489 13.8562 13.8562C13.489 14.2233 13.0213 14.4733 12.5121 14.5746C12.0029 14.6758 11.4751 14.6239 10.9955 14.4252C10.5158 14.2265 10.1058 13.89 9.81739 13.4584C9.52895 13.0267 9.375 12.5192 9.375 12C9.375 11.3038 9.65156 10.6361 10.1438 10.1438C10.6361 9.65156 11.3038 9.375 12 9.375ZM7.125 12C7.125 11.4808 6.97105 10.9733 6.68261 10.5416C6.39417 10.1099 5.9842 9.7735 5.50455 9.57482C5.02489 9.37614 4.49709 9.32415 3.98789 9.42544C3.47869 9.52672 3.01096 9.77673 2.64385 10.1438C2.27673 10.511 2.02673 10.9787 1.92544 11.4879C1.82415 11.9971 1.87614 12.5249 2.07482 13.0045C2.2735 13.4842 2.60995 13.8942 3.04163 14.1826C3.47331 14.471 3.98083 14.625 4.5 14.625C5.19619 14.625 5.86387 14.3484 6.35616 13.8562C6.84844 13.3639 7.125 12.6962 7.125 12ZM16.875 12C16.875 12.5192 17.029 13.0267 17.3174 13.4584C17.6058 13.89 18.0158 14.2265 18.4955 14.4252C18.9751 14.6239 19.5029 14.6758 20.0121 14.5746C20.5213 14.4733 20.989 14.2233 21.3562 13.8562C21.7233 13.489 21.9733 13.0213 22.0746 12.5121C22.1758 12.0029 22.1239 11.4751 21.9252 10.9955C21.7265 10.5158 21.3901 10.1058 20.9584 9.81739C20.5267 9.52895 20.0192 9.375 19.5 9.375C18.8038 9.375 18.1361 9.65156 17.6438 10.1438C17.1516 10.6361 16.875 11.3038 16.875 12Z"
-                      fill="#ACB9B8" />
+                <button class="single-chat-user-call open-btn" id="open-chat-list">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="59" height="59" viewBox="0 0 59 59" fill="none">
+                    <path d="M7.30005 41.9721H51.1M7.30005 29.8055H51.1M7.30005 17.6388H51.1" stroke="#121715" stroke-width="3.65" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </button>
 

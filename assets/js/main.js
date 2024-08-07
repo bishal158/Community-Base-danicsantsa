@@ -262,6 +262,33 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+
+  // for chat open and close
+
+  const chatOpenBtn = document.querySelector("#open-chat-list")
+  const chatLists = document.querySelector('#chating-list-container')
+  const closeChatBtn = document.querySelector("#close-chat-list")
+  const chats = document.querySelectorAll('#all-chats-container li .chatlist-box')
+  if (chatLists && chatOpenBtn && closeChatBtn){
+    chatOpenBtn.addEventListener('click', ()=>{
+      chatLists.classList.toggle("open-chat");
+    })
+    closeChatBtn.addEventListener('click', ()=>{
+      chatLists.classList.toggle("open-chat");
+    })
+    
+  }
+  if(chats){
+    chats.forEach((chat)=>{
+      chat.addEventListener('click', ()=>{
+        chats.forEach((item) => item.classList.remove("active"));
+        chat.classList.add('active')
+        chatLists.classList.toggle("open-chat");
+      });
+     
+    })
+  }
+
 // increment and decrement quantity
 
 const incrementButton = document.querySelectorAll(".increment");
