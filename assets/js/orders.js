@@ -94,3 +94,14 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+   const  emojis = document.querySelectorAll('.emoji-container .box')
+    console.log(emojis)
+    emojis.forEach(emoji => {
+        emoji.addEventListener('click', function() {
+            emojis.forEach((item) => item.classList.remove("selected"));
+            emoji.classList.add("selected");
+        })
+    })
+});

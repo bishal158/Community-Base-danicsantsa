@@ -14,36 +14,35 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="./assets/css/plugins/bootstrap.min.css"
+      href="assets/css/plugins/bootstrap.min.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href="./assets/css/plugins/bootstrap-icons.min.css"
+      href="assets/css/plugins/bootstrap-icons.min.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href="./assets/css/plugins/owl.carousel.min.css"
+      href="assets/css/plugins/owl.carousel.min.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href="./assets/css/plugins/nice-select.min.css"
+      href="assets/css/plugins/nice-select.min.css"
     />
- 
- 
+
     <link
       rel="stylesheet"
       type="text/css"
-      href="./assets/css/plugins/aos.css"
+      href="assets/css/plugins/aos.css"
     />
 
     <!-- flatpicker Css -->
-    <link rel="stylesheet" href="./assets/css/plugins/flatpickr.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/plugins/flatpickr.min.css" />
     <!-- custom css -->
     <link rel="stylesheet" type="text/css" href="assets/css/helper.css" />
-    <link rel="stylesheet" href="assets/css/custom/payment.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/custom/payment.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
   </head>
@@ -205,7 +204,7 @@
             <div class="side-bar-footer">
               <div class="side-bar-footer-badge-container">
                 <div class="footer-badge-logo-container">
-                  <img src="./assets/images/footer-badge-logo.png" alt="" />
+                  <img src="assets/images/footer-badge-logo.png" alt="" />
                 </div>
                 <h1>Community Base</h1>
                 <h4>Best platform for buying & selling online</h4>
@@ -248,7 +247,8 @@
         <div class="main-content-display">
           <!-- header section starts -->
           <div
-            class="upload-new-product-and-service-header seller-profile-view" data-aos="fade-down"
+            class="upload-new-product-and-service-header seller-profile-view"
+            data-aos="fade-down"
           >
             <a class="back-btn" href="service-date-picker.html">
               <svg
@@ -415,11 +415,17 @@
                   </svg>
                 </label>
               </div>
-              <hr/>
+              <hr />
               <!-- field 2 -->
               <div class="payment-input-wrapper">
                 <label for="">Name on card</label>
-                <input type="text" id="card-name" name="card-name" placeholder="Full Name" required />
+                <input
+                  type="text"
+                  id="card-name"
+                  name="card-name"
+                  placeholder="Full Name"
+                  required
+                />
               </div>
 
               <!-- field 3 -->
@@ -446,7 +452,6 @@
                   </select>
                 </div>
                 <div class="payment-input-inner-wrapper">
-                 
                   <select name="expiry-year" id="expiry-year">
                     <option value="2024" selected>2024</option>
                   </select>
@@ -471,9 +476,7 @@
 
               <!-- field 6 -->
               <div class="submit-btn-wrapper">
-                <a href="#"  class="continue-payment">
-                  Review your order
-                </a>
+                <a href="#" class="continue-payment"> Review your order </a>
               </div>
 
               <!-- field 7 -->
@@ -513,28 +516,58 @@
                   <input type="radio" name="pay-with" id="gpay" />
                   <label for="gpay">
                     <span>Pay with Gpay</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="58" height="24" viewBox="0 0 58 24" fill="none">
-                        <g clip-path="url(#clip0_718_3625)">
-                          <path d="M41.1128 7.0808C42.7073 7.0808 43.9394 7.51567 44.8816 8.3854C45.8238 9.25512 46.2587 10.4148 46.2587 11.8643V18.8221H44.2293V17.2276H44.1568C43.2871 18.5322 42.055 19.1845 40.6054 19.1845C39.3733 19.1845 38.2862 18.8221 37.4164 18.0974C36.6192 17.3726 36.1118 16.3579 36.1118 15.2707C36.1118 14.1111 36.5467 13.1689 37.4164 12.4441C38.2862 11.7194 39.5183 11.4294 40.9678 11.4294C42.2724 11.4294 43.2871 11.6469 44.0843 12.1542V11.6469C44.0843 10.9704 43.8318 10.294 43.3267 9.85322L43.2146 9.76246C42.6348 9.25512 41.91 8.96521 41.1128 8.96521C39.8807 8.96521 38.9385 9.47256 38.2862 10.4872L36.4017 9.3276C37.5614 7.80558 39.0834 7.0808 41.1128 7.0808ZM30.8935 2.15234C32.194 2.15234 33.4299 2.60488 34.418 3.4489L34.5898 3.60189C35.6045 4.47162 36.1118 5.77621 36.1118 7.15328C36.1118 8.53035 35.6045 9.76247 34.5898 10.7047C33.5751 11.6469 32.343 12.1542 30.8935 12.1542L27.4146 12.0817V18.8221H25.2402V2.15234H30.8935ZM41.4027 13.1689C40.533 13.1689 39.8082 13.3863 39.2284 13.8212C38.6485 14.1836 38.3586 14.6909 38.3586 15.3432C38.3586 15.923 38.6485 16.4304 39.0834 16.7203C39.5907 17.0827 40.1706 17.3001 40.7504 17.3001C41.5621 17.3001 42.3739 16.9844 43.0088 16.412L43.1421 16.2854C43.8669 15.6331 44.2293 14.8359 44.2293 13.9662C43.577 13.4588 42.6348 13.1689 41.4027 13.1689ZM31.0384 4.18171H27.4146V9.9799H31.0384C31.8357 9.9799 32.6329 9.68999 33.1403 9.11017C34.2999 8.02301 34.2999 6.21108 33.2127 5.12392L33.1403 5.05144C32.5604 4.47162 31.8357 4.10923 31.0384 4.18171ZM58 7.44319L50.8247 23.8955H48.6504L51.3321 18.1698L46.621 7.51567H48.9403L52.3468 15.7056H52.4192L55.7532 7.51567H58V7.44319Z" fill="#5F6368"/>
-                          <path d="M18.7906 10.6322C18.7906 9.97989 18.7181 9.32759 18.6456 8.67529H9.58594V12.3716H14.7318C14.5144 13.5313 13.8621 14.6184 12.8474 15.2707V17.6625H15.9639C17.7759 15.9955 18.7906 13.5313 18.7906 10.6322Z" fill="#4285F4"/>
-                          <path d="M9.59139 19.9816C12.2006 19.9816 14.3749 19.1119 15.9694 17.6624L12.8529 15.2706C11.9831 15.8504 10.896 16.2128 9.59139 16.2128C7.12716 16.2128 4.95284 14.5458 4.22807 12.2266H1.03906V14.6908C2.70604 17.9523 5.96752 19.9816 9.59139 19.9816Z" fill="#34A853"/>
-                          <path d="M4.22181 12.2265C3.78694 11.0669 3.78694 9.76226 4.22181 8.53015V6.06592H1.0328C-0.344267 8.74758 -0.344267 11.9366 1.0328 14.6907L4.22181 12.2265Z" fill="#FBBC04"/>
-                          <path d="M9.59508 4.61452C10.9722 4.61452 12.2767 5.12186 13.2914 6.06406L16.0456 3.30993C14.3061 1.71542 11.9868 0.773219 9.66756 0.845696C6.04369 0.845696 2.70974 2.87506 1.11523 6.13654L4.30424 8.60077C4.95653 6.2815 7.13085 4.61452 9.59508 4.61452Z" fill="#EA4335"/>
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_718_3625">
-                            <rect width="58" height="23.1094" fill="white" transform="translate(0 0.84375)"/>
-                          </clipPath>
-                        </defs>
-                      </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="58"
+                      height="24"
+                      viewBox="0 0 58 24"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_718_3625)">
+                        <path
+                          d="M41.1128 7.0808C42.7073 7.0808 43.9394 7.51567 44.8816 8.3854C45.8238 9.25512 46.2587 10.4148 46.2587 11.8643V18.8221H44.2293V17.2276H44.1568C43.2871 18.5322 42.055 19.1845 40.6054 19.1845C39.3733 19.1845 38.2862 18.8221 37.4164 18.0974C36.6192 17.3726 36.1118 16.3579 36.1118 15.2707C36.1118 14.1111 36.5467 13.1689 37.4164 12.4441C38.2862 11.7194 39.5183 11.4294 40.9678 11.4294C42.2724 11.4294 43.2871 11.6469 44.0843 12.1542V11.6469C44.0843 10.9704 43.8318 10.294 43.3267 9.85322L43.2146 9.76246C42.6348 9.25512 41.91 8.96521 41.1128 8.96521C39.8807 8.96521 38.9385 9.47256 38.2862 10.4872L36.4017 9.3276C37.5614 7.80558 39.0834 7.0808 41.1128 7.0808ZM30.8935 2.15234C32.194 2.15234 33.4299 2.60488 34.418 3.4489L34.5898 3.60189C35.6045 4.47162 36.1118 5.77621 36.1118 7.15328C36.1118 8.53035 35.6045 9.76247 34.5898 10.7047C33.5751 11.6469 32.343 12.1542 30.8935 12.1542L27.4146 12.0817V18.8221H25.2402V2.15234H30.8935ZM41.4027 13.1689C40.533 13.1689 39.8082 13.3863 39.2284 13.8212C38.6485 14.1836 38.3586 14.6909 38.3586 15.3432C38.3586 15.923 38.6485 16.4304 39.0834 16.7203C39.5907 17.0827 40.1706 17.3001 40.7504 17.3001C41.5621 17.3001 42.3739 16.9844 43.0088 16.412L43.1421 16.2854C43.8669 15.6331 44.2293 14.8359 44.2293 13.9662C43.577 13.4588 42.6348 13.1689 41.4027 13.1689ZM31.0384 4.18171H27.4146V9.9799H31.0384C31.8357 9.9799 32.6329 9.68999 33.1403 9.11017C34.2999 8.02301 34.2999 6.21108 33.2127 5.12392L33.1403 5.05144C32.5604 4.47162 31.8357 4.10923 31.0384 4.18171ZM58 7.44319L50.8247 23.8955H48.6504L51.3321 18.1698L46.621 7.51567H48.9403L52.3468 15.7056H52.4192L55.7532 7.51567H58V7.44319Z"
+                          fill="#5F6368"
+                        />
+                        <path
+                          d="M18.7906 10.6322C18.7906 9.97989 18.7181 9.32759 18.6456 8.67529H9.58594V12.3716H14.7318C14.5144 13.5313 13.8621 14.6184 12.8474 15.2707V17.6625H15.9639C17.7759 15.9955 18.7906 13.5313 18.7906 10.6322Z"
+                          fill="#4285F4"
+                        />
+                        <path
+                          d="M9.59139 19.9816C12.2006 19.9816 14.3749 19.1119 15.9694 17.6624L12.8529 15.2706C11.9831 15.8504 10.896 16.2128 9.59139 16.2128C7.12716 16.2128 4.95284 14.5458 4.22807 12.2266H1.03906V14.6908C2.70604 17.9523 5.96752 19.9816 9.59139 19.9816Z"
+                          fill="#34A853"
+                        />
+                        <path
+                          d="M4.22181 12.2265C3.78694 11.0669 3.78694 9.76226 4.22181 8.53015V6.06592H1.0328C-0.344267 8.74758 -0.344267 11.9366 1.0328 14.6907L4.22181 12.2265Z"
+                          fill="#FBBC04"
+                        />
+                        <path
+                          d="M9.59508 4.61452C10.9722 4.61452 12.2767 5.12186 13.2914 6.06406L16.0456 3.30993C14.3061 1.71542 11.9868 0.773219 9.66756 0.845696C6.04369 0.845696 2.70974 2.87506 1.11523 6.13654L4.30424 8.60077C4.95653 6.2815 7.13085 4.61452 9.59508 4.61452Z"
+                          fill="#EA4335"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_718_3625">
+                          <rect
+                            width="58"
+                            height="23.1094"
+                            fill="white"
+                            transform="translate(0 0.84375)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
                   </label>
                 </div>
               </div>
 
               <!-- field 8 -->
-               <div class="submit-btn-wrapper submit-payment-wrapper">
-                <input type="submit" value="Place order"  class="continue-payment submit-btn" />
-               </div>              
+              <div class="submit-btn-wrapper submit-payment-wrapper">
+                <input
+                  type="submit"
+                  value="Place order"
+                  class="continue-payment submit-btn"
+                />
+              </div>
             </form>
           </div>
 
@@ -549,8 +582,6 @@
     <!-- ==== All Js Links ==== -->
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/plugins.js"></script>
-    <!-- Jarallax JS -->
-    <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
