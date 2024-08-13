@@ -128,7 +128,7 @@ section {
 
 /* Track */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 4px;
   background-color: transparent;
 }
 
@@ -136,7 +136,7 @@ section {
 ::-webkit-scrollbar-thumb {
   background-color: #01763f;
   border-radius: 4px;
-  height: 60px;
+  height: 8px;
 }
 
 .modal-body{
@@ -185,7 +185,9 @@ button {
 .owl-dots{
   display: none !important;
 }
-
+.owl-stage{
+  padding-left: 0px !important;
+}
 .flatpickr-day.selected {
   background-color: var(--primary-color) !important;
   color: var(--white);
@@ -1462,8 +1464,14 @@ input[type="range"]::-moz-range-thumb {
   line-height: normal;
   letter-spacing: -0.3px;
   width: 100%;
+  transition: var(--base-transition);
+  border: 1px solid transparent;
 }
-
+.nr--sign--in--btn button:hover{
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--black);
+} 
 .nr--log--in--google--dont {
   width: 400px;
   display: flex;
@@ -1924,8 +1932,15 @@ input[type="range"]::-moz-range-thumb {
   font-size: 30px;
   font-weight: 700;
   line-height: 150%;
+  transition: var(--base-transition);
   letter-spacing: -0.6px;
   text-transform: capitalize;
+  border: 1px solid var(--primary-color);
+}
+.nr--banner--lower--text--and--btn a.dark-btn:hover{
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--white);
 }
 /* banner :: end hare */
 

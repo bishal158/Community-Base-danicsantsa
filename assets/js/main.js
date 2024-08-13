@@ -6,8 +6,6 @@
     // aos init
     AOS.init({
       once: true,
-     
-      
     });
 
     //  address nice selector
@@ -36,12 +34,23 @@
 <path d="M21 12L21.7071 12.7071C22.0976 12.3166 22.0976 11.6834 21.7071 11.2929L21 12ZM16.7071 6.29289C16.3166 5.90237 15.6834 5.90237 15.2929 6.29289C14.9024 6.68342 14.9024 7.31658 15.2929 7.70711L16.7071 6.29289ZM15.2929 16.2929C14.9024 16.6834 14.9024 17.3166 15.2929 17.7071C15.6834 18.0976 16.3166 18.0976 16.7071 17.7071L15.2929 16.2929ZM3 11C2.44772 11 2 11.4477 2 12C2 12.5523 2.44772 13 3 13V11ZM21.7071 11.2929L16.7071 6.29289L15.2929 7.70711L20.2929 12.7071L21.7071 11.2929ZM20.2929 11.2929L15.2929 16.2929L16.7071 17.7071L21.7071 12.7071L20.2929 11.2929ZM3 13H21V11H3V13Z" fill="#121715"/>
 </svg>`,
       ],
+      autoplay:true,
+      autoplayTimeout:2000,
+      autoplayHoverPause:true,
       responsive: {
         0: {
           items: 1,
+          stagePadding: 22,
+      
+        },
+        400: {
+          items: 1,
+          stagePadding: 30,
+        
         },
         550:{
           items: 2,
+          stagePadding: 22,
         },
         991: {
           items: 3,
@@ -70,12 +79,23 @@
       loop: true,
       margin: 20,
       nav: false,
+      autoplay:true,
+      autoplayTimeout:3000,
+      autoplayHoverPause:true,
       responsive: {
         0: {
           items: 1,
+          stagePadding: 22,
+      
+        },
+        400: {
+          items: 1,
+          stagePadding: 30,
+        
         },
         550:{
           items: 2,
+          stagePadding: 22,
         },
         991: {
           items: 3,
@@ -115,12 +135,23 @@
 <path d="M21 12L21.7071 12.7071C22.0976 12.3166 22.0976 11.6834 21.7071 11.2929L21 12ZM16.7071 6.29289C16.3166 5.90237 15.6834 5.90237 15.2929 6.29289C14.9024 6.68342 14.9024 7.31658 15.2929 7.70711L16.7071 6.29289ZM15.2929 16.2929C14.9024 16.6834 14.9024 17.3166 15.2929 17.7071C15.6834 18.0976 16.3166 18.0976 16.7071 17.7071L15.2929 16.2929ZM3 11C2.44772 11 2 11.4477 2 12C2 12.5523 2.44772 13 3 13V11ZM21.7071 11.2929L16.7071 6.29289L15.2929 7.70711L20.2929 12.7071L21.7071 11.2929ZM20.2929 11.2929L15.2929 16.2929L16.7071 17.7071L21.7071 12.7071L20.2929 11.2929ZM3 13H21V11H3V13Z" fill="#121715"/>
 </svg>`,
       ],
+      autoplay:true,
+      autoplayTimeout:2000,
+      autoplayHoverPause:true,
       responsive: {
         0: {
           items: 1,
+          stagePadding: 22,
+          
+        },
+        400: {
+          items: 1,
+          stagePadding: 30,
+        
         },
         550:{
           items: 2,
+          stagePadding: 22,
         },
         991: {
           items: 3,
@@ -160,9 +191,13 @@
 <path d="M21 12L21.7071 12.7071C22.0976 12.3166 22.0976 11.6834 21.7071 11.2929L21 12ZM16.7071 6.29289C16.3166 5.90237 15.6834 5.90237 15.2929 6.29289C14.9024 6.68342 14.9024 7.31658 15.2929 7.70711L16.7071 6.29289ZM15.2929 16.2929C14.9024 16.6834 14.9024 17.3166 15.2929 17.7071C15.6834 18.0976 16.3166 18.0976 16.7071 17.7071L15.2929 16.2929ZM3 11C2.44772 11 2 11.4477 2 12C2 12.5523 2.44772 13 3 13V11ZM21.7071 11.2929L16.7071 6.29289L15.2929 7.70711L20.2929 12.7071L21.7071 11.2929ZM20.2929 11.2929L15.2929 16.2929L16.7071 17.7071L21.7071 12.7071L20.2929 11.2929ZM3 13H21V11H3V13Z" fill="#121715"/>
 </svg>`,
       ],
+      autoplay:true,
+      autoplayTimeout:4000,
+      autoplayHoverPause:true,
       responsive: {
         0: {
           items: 1,
+          stagePadding: 22,
         },
         575: {
           items: 2,
@@ -190,9 +225,13 @@
 <path d="M21 12L21.7071 12.7071C22.0976 12.3166 22.0976 11.6834 21.7071 11.2929L21 12ZM16.7071 6.29289C16.3166 5.90237 15.6834 5.90237 15.2929 6.29289C14.9024 6.68342 14.9024 7.31658 15.2929 7.70711L16.7071 6.29289ZM15.2929 16.2929C14.9024 16.6834 14.9024 17.3166 15.2929 17.7071C15.6834 18.0976 16.3166 18.0976 16.7071 17.7071L15.2929 16.2929ZM3 11C2.44772 11 2 11.4477 2 12C2 12.5523 2.44772 13 3 13V11ZM21.7071 11.2929L16.7071 6.29289L15.2929 7.70711L20.2929 12.7071L21.7071 11.2929ZM20.2929 11.2929L15.2929 16.2929L16.7071 17.7071L21.7071 12.7071L20.2929 11.2929ZM3 13H21V11H3V13Z" fill="#121715"/>
 </svg>`,
       ],
+      autoplay:true,
+      autoplayTimeout:6000,
+      autoplayHoverPause:true,
       responsive: {
         0: {
           items: 1,
+          stagePadding: 30,
         },
         575: {
           items: 2,
@@ -253,14 +292,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   // for filter screen 
-  const filterButton = document.querySelector(".filter-btn")
-  const filterScreen = document.querySelector(".filter-screen")
+  // Select the filter button and filter screen
+const filterButton = document.querySelector(".filter-btn");
+const filterScreen = document.querySelector(".filter-screen");
 
-  if(filterButton && filterScreen){
-    filterButton.addEventListener("click", () => {
-      filterScreen.classList.toggle("show");
-    });
-  }
+if (filterButton && filterScreen) {
+  // Toggle filter screen visibility when the filter button is clicked
+  filterButton.addEventListener("click", (event) => {
+    event.stopPropagation(); // Prevent the click from propagating to the document
+    filterScreen.classList.toggle("show");
+  });
+
+  // Hide filter screen when clicking outside of it
+  document.addEventListener("click", (event) => {
+    if (!filterScreen.contains(event.target) && !filterButton.contains(event.target)) {
+      filterScreen.classList.remove("show");
+    }
+  });
+}
 
 
   // for chat open and close

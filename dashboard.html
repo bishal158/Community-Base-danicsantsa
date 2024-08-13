@@ -157,7 +157,7 @@
         <!-- header section starts -->
         <div class="main-content-display-header-container">
           <!-- user search filter section -->
-          <div class="user-search-filter-section" >
+          <div class="user-search-filter-section">
             <div class="search-wrapper">
               <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
                 <path
@@ -183,16 +183,18 @@
                 </svg>
                 <span>Filters</span>
               </button>
-              <div class="filter-screen">
+              <form class="filter-screen">
                 <div class="filter-screen-header">
                   <span>Applied filters</span>
-                  <button>
-                    Clear all 
+                  <button type="reset">
+                    Clear all
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M14.3955 9.59497L9.60352 14.387" stroke="#D0011B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M14.3976 14.3898L9.60156 9.59277" stroke="#D0011B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg> 
-                </button>
+                      <path d="M14.3955 9.59497L9.60352 14.387" stroke="#D0011B" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M14.3976 14.3898L9.60156 9.59277" stroke="#D0011B" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
                 </div>
                 <div class="gender-check-container">
                   <p>Gender</p>
@@ -200,7 +202,7 @@
                     <input type="checkbox" id="male" name="gender" value="male" />
                     <label for="male">Men's</label>
                   </div>
-                  <div class="input-wrapper" >
+                  <div class="input-wrapper">
                     <input type="checkbox" id="female" name="gender" value="female" />
                     <label for="female">Women's</label>
                   </div>
@@ -211,7 +213,7 @@
                   <div class="price-wrapper">
                     <div class="price-input">
                       <div class="field">
-                          <input type="number" class="input-min" value="1800">
+                        <input type="number" class="input-min" value="1800">
                       </div>
                       <div class="field">
                         <input type="number" class="input-max" value="7500">
@@ -228,38 +230,38 @@
                 </div>
 
 
-               <div class="choose-color-container">
-                <p>Colors</p>
-                <div class="checkbox-group">
-                  <!-- color 1 -->
-                  <input type="checkbox" id="checkbox1" value="black" name="color" >
-                  <label class="custom-checkbox" for="checkbox1">Black</label>
-                  <!-- color 2 -->
-                  <input type="checkbox" id="checkbox2" name="color" value="gray"  >
-                  <label class="custom-checkbox" for="checkbox2">Gray</label>
-                  <!-- color 3 -->
-                  <input type="checkbox" id="checkbox3" name="color" value="white" >
-                  <label class="custom-checkbox" for="checkbox3">White</label>
-                  <!-- color 4 -->
-                  <input type="checkbox" id="checkbox4" name="color" value="red" >
-                  <label class="custom-checkbox" for="checkbox4">Red</label>
-                  <!-- color 5 -->
-                  <input type="checkbox" id="checkbox5" name="color" value="orange" >
-                  <label class="custom-checkbox" for="checkbox5">Orange</label>
-                  <!-- color 6 -->
-                  <input type="checkbox" id="checkbox6" name="color" value="blue">
-                  <label class="custom-checkbox" for="checkbox6">Blue</label>
-              </div>
-               </div>
-                
-              </div>
+                <div class="choose-color-container">
+                  <p>Colors</p>
+                  <div class="checkbox-group">
+                    <!-- color 1 -->
+                    <input type="checkbox" id="checkbox1" value="black" name="color">
+                    <label class="custom-checkbox" for="checkbox1">Black</label>
+                    <!-- color 2 -->
+                    <input type="checkbox" id="checkbox2" name="color" value="gray">
+                    <label class="custom-checkbox" for="checkbox2">Gray</label>
+                    <!-- color 3 -->
+                    <input type="checkbox" id="checkbox3" name="color" value="white">
+                    <label class="custom-checkbox" for="checkbox3">White</label>
+                    <!-- color 4 -->
+                    <input type="checkbox" id="checkbox4" name="color" value="red">
+                    <label class="custom-checkbox" for="checkbox4">Red</label>
+                    <!-- color 5 -->
+                    <input type="checkbox" id="checkbox5" name="color" value="orange">
+                    <label class="custom-checkbox" for="checkbox5">Orange</label>
+                    <!-- color 6 -->
+                    <input type="checkbox" id="checkbox6" name="color" value="blue">
+                    <label class="custom-checkbox" for="checkbox6">Blue</label>
+                  </div>
+                </div>
+
+              </form>
             </div>
           </div>
         </div>
         <!-- header section ends -->
 
         <!-- announcement section starts -->
-        <div class="announcement-section"  data-aos="fade-up" data-aos-duration="600">
+        <div class="announcement-section" data-aos="fade-up" data-aos-duration="600">
           <div class="announcement-header-section">
             <h1>Announcement</h1>
           </div>
@@ -323,12 +325,13 @@
         <!-- announcement section ends -->
 
         <!-- service section starts -->
-        <div class="main-content-display-new-item-container service-offered-section"  data-aos="fade-up" data-aos-duration="700">
+        <div class="main-content-display-new-item-container service-offered-section" data-aos="fade-up"
+          data-aos-duration="700">
           <div class="new-items-header-section">
             <h1>Services Offered</h1>
           </div>
           <!-- card section -->
-          <div class="new-item-product-card-slider-dashboard owl-carousel" >
+          <div class="new-item-product-card-slider-dashboard owl-carousel">
             <!-- item1 -->
             <a href="service-details.html" class="item new-product-card">
               <div class="new-product-card-header">
@@ -424,7 +427,7 @@
         </div>
         <!-- service section ends -->
         <!-- Things To Buy section  starts -->
-        <div class="providers-slider-section" data-aos="fade-up" >
+        <div class="providers-slider-section" data-aos="fade-up">
           <h1>Things To Buy</h1>
           <div class="provider-slider owl-carousel">
             <!-- item 1 -->
@@ -568,7 +571,7 @@
         <!-- Things To Buy section  ends -->
 
         <!-- announcement section starts -->
-        <div class="announcement-section" data-aos="fade-up" >
+        <div class="announcement-section" data-aos="fade-up">
           <div class="announcement-header-section">
             <h1>Latest News</h1>
           </div>
