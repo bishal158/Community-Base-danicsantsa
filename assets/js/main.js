@@ -7,7 +7,7 @@
     AOS.init({
       once: false,
       duration: 1000,
-      mirror: false,
+    
     });
 
     //  address nice selector
