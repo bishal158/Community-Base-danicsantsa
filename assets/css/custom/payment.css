@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root {
   --black: #121715;
   --white: #fff;
@@ -10,9 +17,15 @@
 .upload-new-product-and-service-header.seller-profile-view {
   padding: 51px 50px 51px 38px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 25px;
   background-color: var(--white);
   margin-bottom: 10px;
@@ -24,9 +37,15 @@
   border-radius: 14px;
   border: 1px solid #eff1f6;
   padding: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
 }
 
@@ -44,17 +63,33 @@
 .payment-saction {
   width: 100%;
   padding: 0 50px 20px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .payment-saction form {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 24px;
 }
 
@@ -75,6 +110,8 @@
 
 .payment-method-radio-btn-wrapper {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 10px;
 }
@@ -93,8 +130,13 @@
 
 .payment-input-wrapper {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 14px;
 }
 
@@ -128,8 +170,49 @@
   border-radius: 14px;
   border: 1px solid #e4e7e9;
   background: var(--white);
-  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+          box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
   color: var(--black);
+  font-family: Satoshi;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  /* 133.333% */
+}
+
+.payment-input-wrapper input::-webkit-input-placeholder {
+  color: #acaead;
+  font-family: Satoshi;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  /* 133.333% */
+}
+
+.payment-input-wrapper input::-moz-placeholder {
+  color: #acaead;
+  font-family: Satoshi;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  /* 133.333% */
+}
+
+.payment-input-wrapper input:-ms-input-placeholder {
+  color: #acaead;
+  font-family: Satoshi;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  /* 133.333% */
+}
+
+.payment-input-wrapper input::-ms-input-placeholder {
+  color: #acaead;
   font-family: Satoshi;
   font-size: 18px;
   font-style: normal;
@@ -150,17 +233,29 @@
 
 .payment-input-wrapper.payment-expiry-wrapper {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   gap: 16px;
 }
 
 .payment-input-inner-wrapper {
   width: 33.333%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 14px;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .payment-input-inner-wrapper .nice-select {
@@ -168,8 +263,12 @@
   border-radius: 14px;
   border: 1px solid #e4e7e9;
   background: var(--white);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .payment-input-inner-wrapper .nice-select .current {
@@ -200,8 +299,12 @@
 
 .payment-input-wrapper-terms {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 12px;
 }
 
@@ -234,11 +337,20 @@
 
 .payment-input-wrapper-pay-with {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 20px;
-  justify-content: flex-start;
-  flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .payment-input-wrapper-pay-with label {
@@ -264,13 +376,21 @@
 
 .submit-btn-wrapper .continue-payment {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   max-width: 267px;
   padding: 12px 20px;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 10px;
   background: var(--primary-color);
+  -webkit-transition: var(--base-transition);
+  -o-transition: var(--base-transition);
   transition: var(--base-transition);
   border: 1px solid transparent;
   color: var(--white);
@@ -292,14 +412,22 @@
 }
 .submit-btn-wrapper.submit-payment-wrapper{
 width: 100%;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-justify-content: flex-end;
+-webkit-box-pack: end;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
 }
 .paye-with-inner {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 6px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* responsive css starts */
@@ -309,9 +437,15 @@ justify-content: flex-end;
 /* laptop devices */
 @media only screen and (min-width: 1200px) and (max-width: 1365px) {
   .shipping-section {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .delivary-details {
@@ -320,16 +454,24 @@ justify-content: flex-end;
 
   .order-details {
     width: 100%;
-    align-self: self-end !important;
+    -ms-flex-item-align: self-end !important;
+        -ms-grid-row-align: self-end !important;
+        align-self: self-end !important;
   }
 }
 
 /* large tablet devices */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .shipping-section {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .delivary-details {
@@ -338,7 +480,9 @@ justify-content: flex-end;
 
   .order-details {
     width: 100%;
-    align-self: self-end !important;
+    -ms-flex-item-align: self-end !important;
+        -ms-grid-row-align: self-end !important;
+        align-self: self-end !important;
   }
 }
 
@@ -392,7 +536,13 @@ justify-content: flex-end;
   }
   .payment-input-wrapper.payment-expiry-wrapper {
     
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    
+    -webkit-box-direction: normal;
+    
+        -ms-flex-direction: column;
+    
+            flex-direction: column;
     gap: 12px;
 }
 
@@ -448,7 +598,10 @@ justify-content: flex-end;
 
     .payment-saction {
       padding: 0px 10px 12px 10px;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
     }
 
     .payment-saction form>P {
@@ -458,10 +611,19 @@ justify-content: flex-end;
 
     .payment-saction form {
       width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
       gap: 12px;
     }
 
@@ -478,6 +640,26 @@ justify-content: flex-end;
       line-height: normal;
     }
 
+    .payment-input-wrapper input::-webkit-input-placeholder {
+      font-size: 14px;
+      line-height: normal;
+    }
+
+    .payment-input-wrapper input::-moz-placeholder {
+      font-size: 14px;
+      line-height: normal;
+    }
+
+    .payment-input-wrapper input:-ms-input-placeholder {
+      font-size: 14px;
+      line-height: normal;
+    }
+
+    .payment-input-wrapper input::-ms-input-placeholder {
+      font-size: 14px;
+      line-height: normal;
+    }
+
     .payment-input-wrapper input::placeholder {
       font-size: 14px;
       line-height: normal;
@@ -489,7 +671,10 @@ justify-content: flex-end;
     }
 
     .payment-input-wrapper.payment-expiry-wrapper {
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       gap: 12px;
     }
 
@@ -563,7 +748,10 @@ justify-content: flex-end;
 
     .payment-saction {
       padding: 0px 10px 12px 10px;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
     }
 
     .payment-saction form>P {
@@ -573,10 +761,19 @@ justify-content: flex-end;
 
     .payment-saction form {
       width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
       gap: 12px;
     }
 
@@ -593,6 +790,26 @@ justify-content: flex-end;
       line-height: normal;
     }
 
+    .payment-input-wrapper input::-webkit-input-placeholder {
+      font-size: 14px;
+      line-height: normal;
+    }
+
+    .payment-input-wrapper input::-moz-placeholder {
+      font-size: 14px;
+      line-height: normal;
+    }
+
+    .payment-input-wrapper input:-ms-input-placeholder {
+      font-size: 14px;
+      line-height: normal;
+    }
+
+    .payment-input-wrapper input::-ms-input-placeholder {
+      font-size: 14px;
+      line-height: normal;
+    }
+
     .payment-input-wrapper input::placeholder {
       font-size: 14px;
       line-height: normal;
@@ -604,7 +821,10 @@ justify-content: flex-end;
     }
 
     .payment-input-wrapper.payment-expiry-wrapper {
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       gap: 12px;
     }
 
@@ -678,7 +898,10 @@ justify-content: flex-end;
 
     .payment-saction {
       padding: 0px 10px 12px 10px;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
     }
 
     .payment-saction form>P {
@@ -688,10 +911,19 @@ justify-content: flex-end;
 
     .payment-saction form {
       width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
       gap: 12px;
     }
 
@@ -708,6 +940,26 @@ justify-content: flex-end;
       line-height: normal;
     }
 
+    .payment-input-wrapper input::-webkit-input-placeholder {
+      font-size: 14px;
+      line-height: normal;
+    }
+
+    .payment-input-wrapper input::-moz-placeholder {
+      font-size: 14px;
+      line-height: normal;
+    }
+
+    .payment-input-wrapper input:-ms-input-placeholder {
+      font-size: 14px;
+      line-height: normal;
+    }
+
+    .payment-input-wrapper input::-ms-input-placeholder {
+      font-size: 14px;
+      line-height: normal;
+    }
+
     .payment-input-wrapper input::placeholder {
       font-size: 14px;
       line-height: normal;
@@ -719,7 +971,10 @@ justify-content: flex-end;
     }
 
     .payment-input-wrapper.payment-expiry-wrapper {
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       gap: 12px;
     }
 

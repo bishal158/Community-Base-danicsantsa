@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root {
   --black: #121715;
   --white: #fff;
@@ -13,9 +20,15 @@
 .upload-new-product-and-service-header {
   padding: 30px 38px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 25px;
   background-color: var(--white);
   margin-bottom: 10px;
@@ -27,9 +40,15 @@
   border-radius: 14px;
   border: 1px solid #EFF1F6;
   padding: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
 }
 
@@ -47,8 +66,13 @@
 .upload-product-and-service-tab-section {
   width: 100%;
   padding: 0 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 46px;
   height: auto;
 
@@ -56,11 +80,17 @@
 }
 
 .upload-product-and-service-tab-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   max-width: 410px;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 10px;
   border-radius: 14px;
   border: 1px solid #E8E8E8;
@@ -69,10 +99,16 @@
 
 .tab-btn {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 17px 22px;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 14px;
   border: 1px solid #F6F8F7;
   background-color: var(--white);
@@ -84,6 +120,8 @@
   line-height: normal;
   letter-spacing: -0.3px;
   text-transform: capitalize;
+  -webkit-transition: var(--base-transition);
+  -o-transition: var(--base-transition);
   transition: var(--base-transition);
   text-align: center;
 }
@@ -104,19 +142,35 @@
 }
 
 .upload-form.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 40px;
+  -webkit-transition: var(--base-transition);
+  -o-transition: var(--base-transition);
   transition: var(--base-transition);
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 
 .upload-form-input-wrapper {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 14px;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .upload-form-input-wrapper.date-picker {
@@ -148,7 +202,8 @@
   border-radius: 14px;
   border: 1px solid #DBE0EB;
   background: var(--white);
-  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+          box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
   color: #303432;
   font-family: Satoshi;
   font-size: 18px;
@@ -165,7 +220,8 @@
   border-radius: 14px;
   border: 1px solid #DBE0EB;
   background: var(--white);
-  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+          box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
   color: #303432;
   font-family: Satoshi;
   font-size: 18px;
@@ -175,27 +231,45 @@
 }
 
 .upload-form-input-wrapper.price-input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   gap: 21px;
 }
 
 .upload-form-inner-input-wrapper {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 14px;
 }
 
 .color-wrapper {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 6px;
 }
 
 .upload-form-input-wrapper.color-input-wrapper .color-wrapper label {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 7.5px 12px;
   border-radius: 14px;
@@ -210,6 +284,8 @@
   line-height: 24px;
   /* 133.333% */
   text-align: center;
+  -webkit-transition: var(--base-transition);
+  -o-transition: var(--base-transition);
   transition: var(--base-transition);
 }
 
@@ -217,9 +293,10 @@
   border: 1px solid var(--primary-color);
   background: rgba(1, 118, 63, 0.09);
 } */
-.upload-form-input-wrapper.color-input-wrapper .color-wrapper input {
+.upload-form-input-wrapper.color-input-wrapper .color-wrapper input[type="checkbox"] {
   visibility: hidden;
   width: 0px;
+  display: none;
 }
 
 .upload-form-input-wrapper.color-input-wrapper .color-wrapper input:checked+label {
@@ -229,9 +306,14 @@
 
 .upload-form-image-input-wrapper {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 14px;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .upload-form-image-input-wrapper>label {
@@ -253,30 +335,47 @@
   border-radius: 14px;
   border: 1px solid #DBE0EB;
   background: #E6F2EC;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 183px;
   padding: 26px 40px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 4px;
   cursor: pointer;
 }
 
 .image-preview {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 10px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .image-preview img {
   width: 160px;
   height: 160px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 14px;
   border: 1px solid #DBE0EB;
 }
@@ -293,23 +392,36 @@
 }
 
 .upload-sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 40px;
   height: 40px;
   padding: 10px;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 10px;
   border: 1px solid #EAECF0;
   background: var(--white);
-  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+          box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
 
 .image-upload-text {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 4px;
 }
 
@@ -344,17 +456,29 @@
 
 .upload-form-button-wrapper {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 20px;
 }
 
 .upload-form-reset-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 14px 27px;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 10px;
   border: 1px solid #121715;
   color: var(--black);
@@ -365,6 +489,8 @@
   line-height: normal;
   letter-spacing: -0.3px;
   background-color: var(--white);
+  -webkit-transition: var(--base-transition);
+  -o-transition: var(--base-transition);
   transition: var(--base-transition);
 }
 
@@ -375,10 +501,16 @@
 }
 
 .upload-form-submit-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 14px 27px;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 10px;
   color: var(--white);
   font-family: Satoshi;
@@ -388,6 +520,8 @@
   line-height: normal;
   letter-spacing: -0.3px;
   background-color: var(--primary-color);
+  -webkit-transition: var(--base-transition);
+  -o-transition: var(--base-transition);
   transition: var(--base-transition);
   border: 1px solid var(--primary-color);
 }
@@ -403,7 +537,8 @@
   border-radius: 14px;
   border: 1px solid #DBE0EB;
   background: var(--white);
-  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+          box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
 
 .upload-form-input-wrapper .nice-select::after {
@@ -432,9 +567,15 @@
   line-height: 24px;
   /* 133.333% */
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* ---------------------------------------------- upload new product and service page ends ------------------------------------------- */
@@ -445,9 +586,15 @@
 /* laptop devices */
 @media only screen and (min-width: 1200px) and (max-width: 1365px) {
   .shipping-section {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .delivary-details {
@@ -456,16 +603,24 @@
 
   .order-details {
     width: 100%;
-    align-self: self-end !important;
+    -ms-flex-item-align: self-end !important;
+        -ms-grid-row-align: self-end !important;
+        align-self: self-end !important;
   }
 }
 
 /* large tablet devices */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .shipping-section {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .delivary-details {
@@ -474,7 +629,9 @@
 
   .order-details {
     width: 100%;
-    align-self: self-end !important;
+    -ms-flex-item-align: self-end !important;
+        -ms-grid-row-align: self-end !important;
+        align-self: self-end !important;
   }
 }
 
@@ -509,8 +666,13 @@
   .upload-product-and-service-tab-section {
     width: 100%;
     padding: 0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 15px;
     height: auto;
     margin-bottom: 45px;
@@ -533,7 +695,10 @@
 
 
   .upload-form-input-wrapper.price-input-wrapper{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .upload-form-inner-input-wrapper{
     gap: 12px;
@@ -562,8 +727,13 @@
   .upload-product-and-service-tab-section {
     width: 100%;
     padding: 0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 15px;
     height: auto;
     margin-bottom: 45px;
@@ -585,6 +755,8 @@
 
   .tab-btn {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 11px 12px;
     font-family: Satoshi;
@@ -617,7 +789,10 @@
   }
 
   .upload-form-input-wrapper.price-input-wrapper {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 12px;
   }
 
@@ -628,7 +803,8 @@
 
   .color-wrapper {
     width: 100%;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     row-gap: 12px;
   }
 
@@ -700,8 +876,13 @@
   .upload-product-and-service-tab-section {
     width: 100%;
     padding: 0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 15px;
     height: auto;
     margin-bottom: 45px;
@@ -754,7 +935,10 @@
   }
 
   .upload-form-input-wrapper.price-input-wrapper {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 12px;
   }
 
@@ -765,7 +949,8 @@
 
   .color-wrapper {
     width: 100%;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     row-gap: 12px;
   }
 
