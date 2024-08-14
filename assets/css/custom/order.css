@@ -114,7 +114,7 @@
 }
 
 .order-table-container .user-info .h4 {
-  color: #101828;
+  color: var(--black);
   font-family: Satoshi;
   font-size: 14px;
   font-style: normal;
@@ -234,15 +234,15 @@
   width: 147px;
   padding: 12px 28px;
   border-radius: 11px;
-  background: #01763f;
+  background: var(--primary-color);
   text-align: center;
   transition: var(--base-transition);
 }
 
 .order-table-container .actions .close-btn:hover {
   background-color: transparent;
-  border: 1px solid #01763f;
-  color: #01763f;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
 }
 
 .order-table-container .order-id {
@@ -257,7 +257,7 @@
 }
 
 .order-table-container .price {
-  color: #121715;
+  color: var(--black);
   font-family: Satoshi;
   font-size: 14px;
   font-style: normal;
@@ -407,7 +407,7 @@
 
 .three-dots-action .action-list a:hover {
   background: #dae2de;
-  color: #01763f;
+  color: var(--primary-color);
 }
 
 /* pagination */
@@ -425,11 +425,11 @@
   gap: 8px;
   border-radius: 8px;
   border: 1px solid #d0d5dd;
-  background: #fff;
+  background: var(--white);
   padding: 8px 14px;
   /* Shadow/xs */
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-  color: #121715;
+  color: var(--black);
   font-family: Satoshi;
   font-size: 14px;
   font-style: normal;
@@ -465,12 +465,12 @@
 
 .pagination-container .pages .active-page {
   background: #dae2de;
-  color: #01763f;
+  color: var(--primary-color);
 }
 
 .pagination-container .pages .page:hover {
   background: #dae2de;
-  color: #01763f;
+  color: var(--primary-color);
 }
 
 .modal-body {
@@ -530,7 +530,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #01763f;
+  background: var(--primary-color);
 }
 
 .modal-body .profile-container .left .status .active-now {
@@ -564,7 +564,7 @@
 
 .modal-body .home-cleaning {
   margin-top: 14px;
-  color: #121715;
+  color: var(--black);
   font-family: Satoshi;
   font-size: 28px;
   font-style: normal;
@@ -638,7 +638,7 @@
 }
 
 .modal-body .status-content .pending-content .pending-container h4 {
-  color: var(--Warning-700, #b54708);
+  color:  #b54708;
   font-family: Inter;
   font-size: 14.215px;
   font-style: normal;
@@ -650,7 +650,7 @@
 /* for review modal */
 .modal-body .long-title {
   margin-top: 10px;
-  color: #121715;
+  color: var(--black);
   font-family: Satoshi;
   font-size: 24px;
   font-style: normal;
@@ -683,12 +683,12 @@
 }
 
 .modal-body .emoji-container .box.selected {
-  border: 2px solid #121715;
+  border: 2px solid var(--black);
 }
 
 .modal-body .emoji-container .box span {
   margin-top: 10px;
-  color: #121715;
+  color: var(--black);
   text-align: center;
   font-family: Satoshi;
   font-size: 16px;
@@ -710,7 +710,7 @@
 }
 
 .modal-body .write-review-container .heading {
-  color: #121715;
+  color: var(--black);
   font-family: Satoshi;
   font-size: 24px;
   font-style: normal;
@@ -722,7 +722,7 @@
 .modal-body .write-review-container .text {
   margin-top: 10px;
   opacity: 0.7;
-  color: #121715;
+  color: var(--black);
   font-family: Satoshi;
   font-size: 20px;
   font-style: normal;
@@ -738,7 +738,7 @@
   margin-top: 26px;
   border-radius: 14px;
   border: 1px solid #e4e7e9;
-  background: #fff;
+  background: var(--white);
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
 
@@ -751,8 +751,8 @@
 .modal-body .publish-btn-container button {
   padding: 14px 27px;
   border-radius: 10px;
-  background: #01763f;
-  color: #fff;
+  background: var(--primary-color);
+  color: var(--white);
 }
 
 .availability-section {
@@ -820,7 +820,7 @@
   padding: 16px;
   border-radius: 8px 0 0 8px;
   border: 1px solid #B6C1CA;
-  background: #FFF;
+  background: var(--white);
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
 
 }
@@ -851,7 +851,7 @@
   cursor: pointer;
 
   width: 70px;
-  color: #14181f;
+  color: var(--black);
   text-align: center;
   font-family: Inter;
   font-size: 13px;
@@ -863,7 +863,7 @@
 
 .service-calender-container .calenders .calender-item .times .active {
   border-radius: var(--Num-radius-base, 8px);
-  border: 1px solid #005e33;
+  border: 1px solid var(--primary-color);
   background: #ddfff0;
 }
 
@@ -879,8 +879,8 @@
 .availability-section .checkout-btn {
   padding: 12px 20px;
   border-radius: 14px;
-  background: #01763F;
-  color: #FFF;
+  background: var(--primary-color);
+  color: var(--white);
   text-align: center;
   font-family: Satoshi;
   justify-content: center;
@@ -895,8 +895,14 @@
   margin-left: auto;
   display: flex;
   max-width: 197px;
+  transition: var(--base-transition);
+  border: 1px solid var(--primary-color);
 }
 
+.checkout-btn:hover{
+  background-color: transparent;
+  color: var(--black);
+}
 #calendar-container .easepick-wrapper {
   display: block !important;
 }

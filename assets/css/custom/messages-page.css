@@ -144,6 +144,7 @@
   border-radius: 22px;
   gap: 20px;
   display: flex;
+  transition: var(--base-transition);
 }
 
 .chatlist-box.active {
