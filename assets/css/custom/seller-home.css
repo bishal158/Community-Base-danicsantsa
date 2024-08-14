@@ -179,8 +179,16 @@
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.3px;
+  border: 1px solid var(--primary-color);
+  transition: var(--base-transition);
 }
-
+.upload-btn:hover{
+  background-color: var(--white);
+  color: var(--black);
+}
+.upload-btn:hover svg path{
+  fill: var(--black);
+}
 .new-product-card {
   width: 100%;
   display: flex;

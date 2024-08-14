@@ -5,7 +5,9 @@
   $(document).ready(function () {
     // aos init
     AOS.init({
-      once: true,
+      once: false,
+      duration: 1000,
+      mirror: false,
     });
 
     //  address nice selector
@@ -201,6 +203,7 @@
         },
         575: {
           items: 2,
+          stagePadding: 22,
         },
        
         1000: {
@@ -235,6 +238,7 @@
         },
         575: {
           items: 2,
+          stagePadding: 22,
         },
         
       },
@@ -747,14 +751,14 @@ initializeImageUpload({
     let backSecond = document.querySelector(".nr--forget--password--back.backSecond")
 
 
-    backSecond.addEventListener('click', function(){
+    backSecond?.addEventListener('click', function(){
       stepWrapperThree.style.display = "none";
       stepWrapperTwo.style.display = "block";
 
       console.log("clicked");
     })
 
-    backFirst.addEventListener('click', function(){
+    backFirst?.addEventListener('click', function(){
       stepWrapperTwo.style.display = "none";
       stepWrapperOne.style.display = "block";
 

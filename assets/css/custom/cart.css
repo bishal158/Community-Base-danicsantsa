@@ -345,6 +345,12 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  transition: var(--base-transition);
+  border: 1px solid var(--primary-color);
+}
+.buy-now-btn:hover{
+  background-color: var(--white);
+  color: var(--black);
 }
 
 /* -------------------- cart-page ends here ----------------- */

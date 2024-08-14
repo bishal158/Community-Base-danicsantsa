@@ -196,7 +196,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  max-width: 211px;
+  
 }
 
 .chat-user-name {
@@ -815,21 +815,21 @@ gap: 10px;
 
 }
 .chatting-list-container{
-width: 100%;
-height: 100%;
-top: 0;
-bottom: 0;
-left: 0;
-position: absolute;
-transform: translateX(-100%);
-transition: var(--base-transition);
-opacity: 0;
-z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  transform: translateX(0);
+  transition: var(--base-transition);
+  opacity: 1;
+  z-index: 1;
 }
 .chatting-list-container.open-chat{
-transform: translateX(0);
-opacity: 1;
-z-index: 1;
+  transform: translateX(-100%);
+  opacity: 0;
+  z-index: -1;
 }
 
 .chatlist-search-container{
@@ -916,15 +916,15 @@ max-width: 98%;
   bottom: 0;
   left: 0;
   position: absolute;
-  transform: translateX(-100%);
-  transition: var(--base-transition);
-  opacity: 0;
-  z-index: -1;
-}
-.chatting-list-container.open-chat{
   transform: translateX(0);
+  transition: var(--base-transition);
   opacity: 1;
   z-index: 1;
+}
+.chatting-list-container.open-chat{
+  transform: translateX(-100%);
+  opacity: 0;
+  z-index: -1;
 }
 
 .chatlist-search-container{
@@ -1011,15 +1011,15 @@ max-width: 98%;
   bottom: 0;
   left: 0;
   position: absolute;
-  transform: translateX(-100%);
-  transition: var(--base-transition);
-  opacity: 0;
-  z-index: -1;
-}
-.chatting-list-container.open-chat{
   transform: translateX(0);
+  transition: var(--base-transition);
   opacity: 1;
   z-index: 1;
+}
+.chatting-list-container.open-chat{
+  transform: translateX(-100%);
+  opacity: 0;
+  z-index: -1;
 }
 .chatlist-search-container{
   max-width: 100%;
@@ -1102,15 +1102,15 @@ max-width: 98%;
   bottom: 0;
   left: 0;
   position: absolute;
-  transform: translateX(-100%);
-  transition: var(--base-transition);
-  opacity: 0;
-  z-index: -1;
-}
-.chatting-list-container.open-chat{
   transform: translateX(0);
+  transition: var(--base-transition);
   opacity: 1;
   z-index: 1;
+}
+.chatting-list-container.open-chat{
+  transform: translateX(-100%);
+  opacity: 0;
+  z-index: -1;
 }
 .chatting-list-container{
   max-width: 97%;

@@ -132,6 +132,14 @@
   max-width: 180px;
 }
 
+.notification-close{
+  cursor: pointer;
+  transition: var(--base-transition);
+}
+.notification-close:hover svg path{
+  stroke: #FF3363;
+}
+
 /* -------------------- Notification page ends here ----------------- */
 
 

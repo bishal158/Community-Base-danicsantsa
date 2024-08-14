@@ -349,6 +349,7 @@
   border-radius: 20px;
   position: relative;
   overflow: hidden;
+  background-color: var(--secondary-color) ;
 }
 
 .product-card-header span {
@@ -414,7 +415,7 @@
 .product-card-header img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 20px;
   transition: var(--base-transition);
 }
@@ -983,15 +984,21 @@
 
   .all-products-card-section {
     width: 100% !important;
-    gap: 20px !important;
+    row-gap: 20px !important;
+    column-gap: 7px !important;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
   }
 
   .product-card {
-    width: 100% !important;
-    max-width: 100% !important;
+    width: 170px !important;
+    max-width: 170px !important;
     gap: 10px;
   }
-
+  .product-card-header{
+    max-height: 220px;
+  }
   .product-card-body {
     gap: 10px;
   }
