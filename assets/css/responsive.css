@@ -5509,6 +5509,9 @@
 .main-content-display::-webkit-scrollbar-thumb{
   background-color: transparent;
 }
+.main-content-display.overflow{
+  overflow: hidden !important;
+}
 }
 @media only screen and (min-width:480px) and (max-width: 575px) {
 

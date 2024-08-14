@@ -377,7 +377,7 @@ if(incrementButton && decrementButton){
   const rangeInput = document.querySelectorAll(".range-input input"),
   priceInput = document.querySelectorAll(".price-input input"),
   range = document.querySelector(".slider .progress");
-    let priceGap = 1000;
+  let priceGap = 1000;
   
 
   if(priceInput && rangeInput && range){
@@ -454,14 +454,13 @@ if(incrementButton && decrementButton){
   });
   
   // toggole sidebar javascript
-
-
   const toggleButton = document.querySelector(".side-toggole-icon-side");
   const sidebarContainer = document.querySelector(".side-bar-container");
 
   if(toggleButton && sidebarContainer){
     toggleButton.addEventListener("click", () => {
       sidebarContainer.classList.toggle("close");
+      document.querySelector(".main-content-display").classList.toggle("overflow");
     });
     
   }
